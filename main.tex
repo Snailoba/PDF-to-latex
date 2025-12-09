@@ -7,6 +7,7 @@
 \usepackage{newtxtext,newtxmath} % Times-like fonts for pdflatex (Overleaf/MiKTeX friendly)
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{graphicx}
+\graphicspath{{assets/images/}} % default path for figures
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{booktabs}
@@ -14,24 +15,25 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{microtype}
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath} % amssymb conflicts with newtxmath (\Bbbk); omit
 \usepackage{float}
 
-\title{DishDive Application Report}
-\author{Author name}
-\date{}
+\title{DishDive Application: Menu Review Analysis}
+\author{Mr. Chayapol Mahatthanachai \\ Mr. Shinathaj Chinskul}
+\date{2025}
 
 \begin{document}
-\maketitle
+% Front matter first (title page inside front_matter), then TOC
+\input{front_matter}
 \tableofcontents
 \cleardoublepage
 
-% Include chapters (one file per chapter)
-\include{chapters/ch1}
-\include{chapters/ch2}
-\include{chapters/ch3}
-\include{chapters/ch4}
-\include{chapters/ch5}
+% Include chapters
+\input{chapters/ch1}
+\input{chapters/ch2}
+\input{chapters/ch3}
+\input{chapters/ch4}
+\input{chapters/ch5}
 
 % Bibliography placeholder
 \cleardoublepage

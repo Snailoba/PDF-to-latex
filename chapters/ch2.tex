@@ -1,3 +1,29 @@
-% chapters/ch2.tex
-\chapter{Chapter 2 — Title}
-% TODO: Paste Chapter 2 content here (from extracted_text.txt)
+% Chapter 2: Feasibility Study
+\chapter{Feasibility Study}
+
+\section{Introduction}
+The feasibility section evaluates the practicality of implementing the proposed system, which extracts and processes social media comments to generate restaurant and dish recommendations. Existing sentiment analysis tools and recommendation systems provide restaurant-level insights but often fail to analyze dish-specific feedback, leaving diners uncertain about the best meal choices. This section assesses the technical, operational, and financial feasibility of delivering precise, dish-level insights in real-world use.
+
+\section{Problem Statement}
+Selecting a meal is inefficient because customer reviews are scattered across Facebook, X, Instagram, and other platforms. Users manually search multiple sources to identify recommended dishes, creating information overload and inconsistent signals. Sentiment and keyword analysis are not readily available, making it hard to judge quality and popularity of specific menu items. Restaurants also lack structured insights, limiting their ability to improve offerings. Without a centralized, AI-powered system to summarize feedback, both users and restaurants face frustration and missed opportunities.
+
+\section{Related Research and Projects}
+Prior work in AI-driven sentiment analysis and recommendation systems has improved restaurant-level ratings, but gaps remain. DishDive targets dish-specific recommendations, integrates AI-driven sentiment analysis and keyword extraction, and leverages real-time social media data to surface trending dishes. User preference features personalize suggestions, making the system more interactive and tailored to individual tastes.
+
+\section{Requirement Specifications}
+Based on initial evaluation, the implementation must satisfy:
+\begin{itemize}
+	\item Functional: ingest social data, perform sentiment and keyword extraction, store structured results, and deliver personalized recommendations.
+	\item Non-functional: maintain reliability, responsiveness, and up-to-date data freshness while scaling to ongoing social feeds.
+\end{itemize}
+
+\section{Implementation Plan}
+The project is estimated at roughly 5--6 months, divided into phases such as research and wireframing, database design, backend preparation, demo, web crawling, LLM processing, preference algorithm, frontend display, integration and testing, and finalization. Each phase incrementally delivers working components toward a containerized, deployable DishDive application.
+
+% Add placeholders for figures
+\begin{figure}[h]
+\centering
+\IfFileExists{path/to/figure2.png}{\includegraphics[width=\textwidth]{path/to/figure2.png}}{\fbox{Figure 2 placeholder}}
+\caption{Figure 2: Example Placeholder}
+\label{fig:example2}
+\end{figure}

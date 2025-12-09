@@ -1,3 +1,72 @@
-% chapters/ch4.tex
-\chapter{Chapter 4 — Title}
-% TODO: Paste Chapter 4 content here (from extracted_text.txt)
+% Chapter 4: System Functionality
+\chapter{System Functionality}
+
+\section{System Functionality}
+The DishDive application addresses decision fatigue in food choice by transforming unstructured textual reviews into actionable, personalized menu insights. Core functions include:
+
+\subsection{User Management and Personalization}
+Secure registration and login via JWT, with user-driven personalization such as Favorites that feed the recommendation logic.
+
+\subsection{Restaurant and Menu Browsing}
+Search and browse restaurants and menus, including location-based search and detailed menu views with review analyses.
+
+\subsection{Review Submission and Real-Time AI Extraction}
+Users submit reviews in-app; the API immediately triggers AI extraction to pull attributes, sentiment, and topic clusters so new feedback is instantly incorporated.
+
+\subsection{Menu Review Analysis and Synthesis}
+Summaries surface flavor profiles, sentiment breakdowns, and recommendation signals derived from batch and real-time reviews instead of raw text streams.
+
+\section{System Architecture}
+DishDive uses a modern three-tier architecture for scalable, real-time AI processing.
+
+\subsection{High-Level Overview}
+Three layers: Client App (Flutter/Dart UI, state, HTTP), API Server (Go + Fiber, GORM, JWT, real-time LLM calls), and Storage \& AI Backbone (PostgreSQL, MinIO, Python batch tools). The runtime flow: Flutter requests \textrightarrow{} Go API \textrightarrow{} PostgreSQL or OpenAI LLM services.
+
+\subsection{Architecture Modules and Stack}
+	extbf{Client (Flutter/Dart):} Provider for state, Dio for networking, Maps\_flutter + geolocator for maps/location.
+
+	extbf{API Server (Go):} Fiber v2 for routing, GORM for ORM to PostgreSQL, JWT for auth, native HTTP client for OpenAI calls to perform real-time extraction.
+
+	extbf{Storage and AI Backbone:} PostgreSQL for structured data (users, restaurants, reviews, extracts); MinIO for media assets; Python batch scripts (Pandas, psycopg2, OpenAI client) for offline ingestion/cleaning.
+
+\subsection{Critical Data Flows}
+	extbf{Review Submission and AI Extraction:} Flutter sends POST /SubmitReview; Go API stores raw text; calls OpenAI for structured extraction; stores to \texttt{review\_extracts}; background normalization maps into domain tables and updates recommendation signals.
+
+	extbf{Authentication:} Login returns JWT; client stores token; subsequent requests include Authorization header; Go API verifies before access.
+
+\section{Test Plan}
+Testing focused on end-to-end validation of critical components using manual scenario execution (smoke tests) to verify assessable features F1--F7.
+
+\subsection{Distinct Project Features Tests}
+\begin{itemize}
+	\item \textbf{F1}: Batch processing of raw review data with LLM, persisting structured data to \texttt{review\_extracts}.
+	\item \textbf{F1.1}: Run web crawler/ingestion to process social comments.
+	\item \textbf{F1.2}: Verify sentiment and keyword fields for a sample dish in \texttt{review\_extracts}.
+	\item \textbf{F2}: UI shows summary and top-rated dishes from processed data.
+	\item \textbf{F2.1}: Map view displays restaurant locations.
+	\item \textbf{F2.2}: Restaurant page shows analyzed menu insights (flavor profiles, service comments).
+\end{itemize}
+
+\subsection{Support Project Features Tests}
+\begin{itemize}
+	\item \textbf{F3}: Restaurant list populates correctly.
+	\item \textbf{F4}: Search by name/location filters list.
+	\item \textbf{F5}: Favorites persist and appear in Favorites tab.
+	\item \textbf{F6}: Registration and login succeed.
+	\item \textbf{F7}: All components (Flutter, Go API, Postgres, MinIO) run in the containerized environment.
+\end{itemize}
+
+\section{Test Results}
+All assessable features F1--F7 were executed and marked successful:
+\begin{itemize}
+	\item \textbf{Distinct Features (F1, F1.1, F1.2, F2, F2.1, F2.2):} Batch processing, sentiment/keyword extraction, summarized dish recommendations, and map/list UI flows all passed.
+	\item \textbf{Support Features (F3--F7):} Listing, search, favorites, auth, and full stack deployment validated in the containerized setup.
+\end{itemize}
+
+% Add placeholders for figures
+\begin{figure}[h]
+\centering
+\IfFileExists{path/to/figure4.png}{\includegraphics[width=\textwidth]{path/to/figure4.png}}{\fbox{Figure 4 placeholder}}
+\caption{Figure 4: Example Placeholder}
+\label{fig:example4}
+\end{figure}

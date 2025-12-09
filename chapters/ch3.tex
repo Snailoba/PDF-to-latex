@@ -1,3 +1,41 @@
-% chapters/ch3.tex
-\chapter{Chapter 3 — Title}
-% TODO: Paste Chapter 3 content here (from extracted_text.txt)
+% Chapter 3: System Analysis and Design
+\chapter{System Analysis and Design}
+
+\section{Analysis of the Existing System}
+The current approach to discovering restaurant dishes relies on manual searches across social platforms, food blogs, and review sites. Users face unstructured information and inefficiencies when identifying the best dishes, and there is no automated, structured recommendation workflow.
+
+\subsection{Current System Workflow}
+\begin{itemize}
+	\item Google Reviews: integrated into the Google ecosystem to manage and display user-generated reviews across services.
+	\item Wongnai (LINE MAN Wongnai): Thai platform for restaurant reviews, food delivery, and lifestyle content, serving users and merchants.
+	\item Tabelog: Japanese review platform with heavy user-generated content and rankings.
+\end{itemize}
+
+\subsection{Challenges in the Existing System}
+\begin{itemize}
+	\item Lack of personalization; dish-level sentiment is rarely surfaced.
+	\item Limited dish-level insights (e.g., Tabelog seldom breaks down to individual dishes).
+	\item Time-consuming decision-making due to scattered data and manual review.
+	\item No real-time data processing; insights are not kept current.
+\end{itemize}
+
+\section{User Requirement Analysis}
+Requirements gathered from surveys and interviews with diners and review-platform users include:
+\begin{itemize}
+	\item Personalized, accurate recommendations tailored to taste, dietary needs, and history.
+	\item Real-time, reliable information aggregated from blogs, review platforms, and social media.
+	\item Intuitive, user-friendly interface with advanced search and filtering (location, cuisine, dietary restrictions).
+	\item Comprehensive dish insights with sentiment trends and key feedback.
+	\item Efficient performance under load; interactive features to save favorites, submit reviews, and refine recommendations.
+\end{itemize}
+
+\section{New System Design}
+The DishDive design introduces AI-driven sentiment analysis, real-time data extraction, and structured recommendations to automate and optimize discovery of the best dishes. A backend stack (data collection, LLM processing, database, recommendation engine) supports a mobile-first front end. (Diagrams such as the site map, data flow, activity diagrams, and system architecture belong here once recreated.)
+
+% Add placeholders for figures
+\begin{figure}[h]
+\centering
+\IfFileExists{path/to/figure3.png}{\includegraphics[width=\textwidth]{path/to/figure3.png}}{\fbox{Figure 3 placeholder}}
+\caption{Figure 3: Example Placeholder}
+\label{fig:example3}
+\end{figure}

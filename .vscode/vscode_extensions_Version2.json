@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "james-yu.latex-workshop",
+    "yzhang.markdown-all-in-one",
+    "eamodio.gitlens",
+    "timonwong.shellcheck",
+    "adammaras.pandoc"
+  ]
+}

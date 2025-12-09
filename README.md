@@ -4,11 +4,13 @@ This project is a clean, semantic LaTeX skeleton that I prepared for converting:
 `DishDive Application Report Chapter 1 - 5.pdf` into an editable LaTeX project.
 
 Summary of the PDF I inspected
+
 - File: DishDive Application Report Chapter 1 - 5.pdf (from Snailoba/PDF-to-latex, branch main)
 - Producer: Skia/PDF (Google Docs Renderer) — typically a digital (selectable) PDF.
 - Expected extraction outcome: text should be extractable. Figures/images are embedded as XObjects. Equations and complex tables will need manual review and retyping.
 
 What I prepared (in this draft)
+
 - main.tex — top-level semantic document using newtxtext/newtxmath (a Times-like match compatible with pdflatex / Overleaf / MiKTeX).
 - chapters/ch1.tex ... ch5.tex — per-chapter files with placeholders and instructions where to paste extracted text or images.
 - scripts/extract_images.sh — uses pdfimages to extract images in original format.
@@ -17,6 +19,7 @@ What I prepared (in this draft)
 - A `README.md` (this file) describing next steps and known limitations.
 
 How to run the extraction locally (Linux/macOS, requires poppler-utils, pandoc, imagemagick optionally)
+
 1. Clone the repo (or copy the PDF to a working folder).
 2. Run:
    - `bash scripts/extract_images.sh "DishDive Application Report Chapter 1 - 5.pdf" images/`
@@ -26,6 +29,7 @@ How to run the extraction locally (Linux/macOS, requires poppler-utils, pandoc, 
    - (Optional) `bash scripts/pandoc_firstpass.sh extracted_text.txt draft.tex` to get a Pandoc-first-pass LaTeX conversion you can use to help fill `chapters/*`.
 
 Files that need manual attention (high priority)
+
 - Equations / math: automatic extraction rarely yields valid LaTeX for complex math. Re-type important equations into the chapter files using amsmath.
 - Tables: complex tables (merged cells, nested headers) will likely require manual reconstruction using tabular/booktabs/longtable.
 - Figures: check each extracted image for resolution and caption placement. Replace with vector exports if available and preferred.
@@ -33,6 +37,7 @@ Files that need manual attention (high priority)
 - Fonts: the project uses newtxtext/newtxmath (Times-like) so it compiles with pdflatex on Overleaf/MiKTeX. If you want exact Times New Roman, switch to XeLaTeX and upload the TTF files.
 
 Suggested next steps (what I recommend you run and then send me)
+
 1. Run the extraction scripts from this project locally (they will populate `images/` and `extracted_text.txt`).
 2. Open `images/` and the `extracted_text.txt`:
    - For each image you want placed inline, copy its filename into the appropriate chapter file and add \includegraphics lines.
@@ -47,3 +52,25 @@ Suggested next steps (what I recommend you run and then send me)
 If you'd like me to push this skeleton into your GitHub repo on a new branch and open a PR with the skeleton files, say "please push the skeleton to the repo" and I will create a branch and open a PR with these files. (I won't push extracted images or the extracted text because I can't run the extraction here; you'd run the extraction locally and then either upload images to the repo or let me add them on a follow-up PR.)
 
 Anything I should change now before you run the local extraction? (E.g., use XeLaTeX with fontspec + Times New Roman instead of newtx, prefer two-column layout, want me to push files to the repo directly.)
+
+Windows helper
+
+- **PowerShell script**: `scripts/convert_pdf_to_latex.ps1` is included to help automate extraction on Windows.
+- **Usage** (PowerShell):
+
+```
+# From repository root (PowerShell):
+.
+\scripts\convert_pdf_to_latex.ps1 -PdfPath "DishDive Application Report Chapter 1 - 5.pdf" -OutDir "latex_output"
+```
+
+- **Prerequisites**: `pdftotext` (Poppler) and `pandoc` must be installed. On Windows you can install them with Chocolatey:
+
+```
+choco install poppler -y
+choco install pandoc -y
+```
+
+- After running the script the folder `latex_output/` will contain `extracted_text.txt` and a best-effort `main.tex` you can review and split into `chapters/` files.
+
+If you want, after you install the prerequisites and run the PowerShell script I can continue: split into `chapters/ch1.tex`..`ch5.tex`, clean equations and tables, and prepare a compile-ready project.

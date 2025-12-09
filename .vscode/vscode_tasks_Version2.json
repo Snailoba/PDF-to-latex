@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Make scripts executable",
+      "type": "shell",
+      "command": "chmod +x scripts/*.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Extract images",
+      "type": "shell",
+      "command": "bash -c \"scripts/extract_images.sh 'DishDive Application Report Chapter 1 - 5.pdf' images/\"",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Extract text (layout)",
+      "type": "shell",
+      "command": "bash -c \"scripts/extract_text.sh 'DishDive Application Report Chapter 1 - 5.pdf' extracted_text.txt\"",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "Pandoc first pass (optional)",
+      "type": "shell",
+      "command": "bash -c \"scripts/pandoc_firstpass.sh extracted_text.txt draft.tex\"",
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "LaTeX: build (latexmk)",
+      "type": "shell",
+      "command": "bash -c \"if command -v latexmk >/dev/null 2>&1; then latexmk -pdf -interaction=nonstopmode main.tex; else pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex; fi\"",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "Clean LaTeX build files",
+      "type": "shell",
+      "command": "bash -c \"latexmk -C || rm -f *.aux *.log *.out *.toc *.fdb_latexmk *.fls || true\"",
+      "problemMatcher": []
+    }
+  ]
+}

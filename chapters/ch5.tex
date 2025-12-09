@@ -1,3 +1,47 @@
-% chapters/ch5.tex
-\chapter{Chapter 5 — Title}
-% TODO: Paste Chapter 5 content here (from extracted_text.txt)
+% Chapter 5: Summary and Suggestions
+\chapter{Summary and Suggestions}
+
+\section{Project Summary and Conclusion}
+DishDive met its core objective: using AI to convert unstructured restaurant reviews into concise, actionable menu insights for users facing decision fatigue. By synthesizing sentiment and keywords via an LLM, the system delivers summarized recommendations. The functional prototype (Flutter, Go, PostgreSQL) implemented and validated all seven assessable features (F1--F7), showing the viability of AI-driven menu analysis and providing a scalable, maintainable application.
+
+\section{Problems Encountered and Solutions}
+Two main technical challenges required adaptation during data acquisition and AI processing.
+
+\subsection{Web Scraper and Data Acquisition}
+Automated scraping handled Google Maps reviews but struggled with high-review-count Wongnai shops due to dynamic loading and protections. Solution: dual strategy with automated scraping for shops under 8 reviews and manual-assisted scraping for heavier pages. Roughly 340 shops required manual work over three days to reach the needed data volume.
+
+\subsection{Large Language Model Selection}
+A local open-source model (Ollama Qwen) could not produce reliable structured JSON for the complex prompt. Pivoting to GPT-4o mini immediately solved extraction quality, validating the core approach and enabling completion of API and app integration.
+
+\section{Suggestions for Further Development (DishDive 2.0)}
+
+\subsection{Enhanced Personalization and Recommendation Engine}
+Move beyond aggregate sentiment to collaborative filtering based on user history and preferences for truly personalized dish recommendations.
+
+\subsection{Broader Data Acquisition and Scaling}
+Expand beyond Bangkok: ingest other cities/countries and add live social media feeds (X, Instagram) for real-time trends and comments.
+
+\subsection{LLM Pipeline Optimization}
+Adopt a cascading strategy to reduce costs: send simple cleaning/sentiment tasks to a cheaper model, reserve GPT-4o mini for complex extraction and summarization.
+
+% Add placeholders for figures
+\begin{figure}[h]
+\centering
+\IfFileExists{path/to/figure5.png}{\includegraphics[width=\textwidth]{path/to/figure5.png}}{\fbox{Figure 5 placeholder}}
+\caption{Figure 5: Example Placeholder}
+\label{fig:example5}
+\end{figure}
+
+\section*{References}
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{9}
+\bibitem{Graham2017} Graham, D. J., Orquin, J. L., \& Visschers, V. H. M. (2017). The influence of time of day on decision fatigue in online food choice. \textit{British Food Journal}, 118(3), 735--748. https://doi.org/10.1108/bfj-05-2016-0227
+
+\bibitem{Greene2024} Greene, D., Nguyen, M., \& Dolnicar, S. (2024). How do you choose your meal when you dine out? A mixed methods study in consumer food-choice strategies in the restaurant context. \textit{Appetite}, 203, 107683. https://doi.org/10.1016/j.appet.2024.107683
+
+\bibitem{HintIt2025} Hint It Staff. (2025, February 9). Decision fatigue in menu design: How restaurants can improve customer choices. Hint-it Blog. \url{https://www.hint.it/blog/decision-fatigue-in-menu-design-how-restaurants-can-improve-customer-choices}
+
+\bibitem{Shin2022} Shin, B., Ryu, S., Kim, Y., \& Kim, D. (2022). Analysis on review data of restaurants in Google Maps through text mining: Focusing on sentiment analysis. \textit{Journal of Multimedia Information System}, 9(1), 61--68. https://doi.org/10.33851/JMIS.2022.9.1.61
+
+\bibitem{Zahrah2024} Zahrah, V. A., Nurdin, \& Risawandi. (2024). Sentiment analysis of Google Maps user reviews on the Play Store using Support Vector Machine and Latent Dirichlet Allocation topic modeling. \textit{International Journal of Engineering, Science and Information Technology}, 4(4), 87--100. https://doi.org/10.52088/ijesty.v4i4.580
+\end{thebibliography}
