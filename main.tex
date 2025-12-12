@@ -12,20 +12,33 @@
 \usepackage{subcaption}
 \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{tabularx}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{microtype}
 \usepackage{amsmath} % amssymb conflicts with newtxmath (\Bbbk); omit
 \usepackage{float}
+\usepackage{indentfirst} % indent first paragraph after sections/chapters
+
+% Rename the default bibliography heading for report class
+\renewcommand{\bibname}{References}
+
+% Global paragraph formatting for body text
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt}
 
 \title{DishDive Application: Menu Review Analysis}
 \author{Mr. Chayapol Mahatthanachai \\ Mr. Shinathaj Chinskul}
 \date{2025}
 
 \begin{document}
-% Front matter first (title page inside front_matter), then TOC
-\input{front_matter}
-\tableofcontents
+% Front matter first (title page inside front_matter), then Lists and TOC
+% Global paragraph formatting
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\pagenumbering{roman}
+\input{chapters/front_matter}
 \cleardoublepage
 
 % Include chapters
@@ -35,10 +48,6 @@
 \input{chapters/ch4}
 \input{chapters/ch5}
 
-% Bibliography placeholder
-\cleardoublepage
-\phantomsection
-\addcontentsline{toc}{chapter}{References}
-% If you use BibTeX/Biber, add \bibliographystyle and \bibliography here.
+% If you use BibTeX/Biber later, add \bibliographystyle and \bibliography here.
 
 \end{document}

@@ -1,43 +1,48 @@
-\contentsline {chapter}{Acknowledgments}{1}{chapter*.1}%
-\contentsline {chapter}{Abstract}{2}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Background}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objectives}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Scope}{6}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Expected Benefits}{7}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Feasibility Study}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Problem Statement}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Related Research and Projects}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Requirement Specifications}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Implementation Plan}{9}{section.2.5}%
-\contentsline {chapter}{\numberline {3}System Analysis and Design}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Analysis of the Existing System}{10}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Current System Workflow}{10}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Challenges in the Existing System}{10}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}User Requirement Analysis}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}New System Design}{11}{section.3.3}%
-\contentsline {chapter}{\numberline {4}System Functionality}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}System Functionality}{12}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}User Management and Personalization}{12}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Restaurant and Menu Browsing}{12}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Review Submission and Real-Time AI Extraction}{12}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Menu Review Analysis and Synthesis}{12}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}System Architecture}{12}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}High-Level Overview}{12}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Architecture Modules and Stack}{13}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Critical Data Flows}{13}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Test Plan}{13}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Distinct Project Features Tests}{13}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Support Project Features Tests}{13}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Test Results}{13}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Summary and Suggestions}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Project Summary and Conclusion}{15}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Problems Encountered and Solutions}{15}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Web Scraper and Data Acquisition}{15}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Large Language Model Selection}{15}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Suggestions for Further Development (DishDive 2.0)}{15}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Enhanced Personalization and Recommendation Engine}{15}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Broader Data Acquisition and Scaling}{15}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}LLM Pipeline Optimization}{16}{subsection.5.3.3}%
-\contentsline {section}{References}{16}{section*.10}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objectives}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Scope}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Expected Benefits}{2}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Feasibility Study}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Problem Statement}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Related research and projects}{3}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Requirement Specifications}{4}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Implementation Plan}{4}{section.2.5}%
+\contentsline {chapter}{\numberline {3}System Analysis and Design}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Analysis of the Existing System}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Current System Workflow}{12}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Challenges in the Existing System}{14}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}User requirement analysis}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}New System Design}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Site Map}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Data Processing Data Flow Diagram}{16}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Search \& Display Process UML Activity Diagram}{18}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Recommendation Algorithm Flow Chart}{19}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}ER Diagram}{20}{subsection.3.3.5}%
+\contentsline {chapter}{\numberline {4}System Functionality}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}System Functionality}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}User Management and Personalization}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Restaurant and Menu Browsing}{23}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Review Submission and Real-Time AI Extraction}{23}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Menu Review Analysis and Synthesis}{23}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}System Architecture}{24}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}High-Level Overview}{24}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Architecture Modules and Technology Stack}{24}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Critical Data Flows}{25}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Test Plan}{25}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Distinct Project Features Test}{26}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Support Project Features Test}{26}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Test Results}{26}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Distinct Project Features Results}{27}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Support Project Features Results}{27}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Summary and Suggestions}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Project Summary and Conclusion}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Problems Encountered and Solutions}{28}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Web Scraper and Data Acquisition}{28}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Large Language Model (LLM) Selection}{29}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Suggestions for Further Development}{29}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Enhanced Personalization and Recommendation Engine}{29}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Broader Data Acquisition and Scaling}{29}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}LLM Pipeline Optimization}{29}{subsection.5.3.3}%
+\contentsline {chapter}{References}{30}{section*.34}%

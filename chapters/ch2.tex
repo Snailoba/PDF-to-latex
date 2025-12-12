@@ -2,28 +2,307 @@
 \chapter{Feasibility Study}
 
 \section{Introduction}
-The feasibility section evaluates the practicality of implementing the proposed system, which extracts and processes social media comments to generate restaurant and dish recommendations. Existing sentiment analysis tools and recommendation systems provide restaurant-level insights but often fail to analyze dish-specific feedback, leaving diners uncertain about the best meal choices. This section assesses the technical, operational, and financial feasibility of delivering precise, dish-level insights in real-world use.
+The feasibility section evaluates the practicality of implementing the proposed
+system, which extracts and processes social media comments to generate restaurant and dish
+recommendations. While existing sentiment analysis tools and restaurant recommendation
+systems provide insights into overall restaurant quality, they often fail to analyze
+dish-specific feedback, leaving diners uncertain about the best meal choices. Our project
+addresses these gaps by leveraging AI-driven sentiment analysis, a structured database, and
+personalized recommendations to deliver precise, dish-level insights. This section will assess
+the technical, operational, and financial feasibility of the project, ensuring its viability in
+real-world applications.
 
 \section{Problem Statement}
-Selecting a meal is inefficient because customer reviews are scattered across Facebook, X, Instagram, and other platforms. Users manually search multiple sources to identify recommended dishes, creating information overload and inconsistent signals. Sentiment and keyword analysis are not readily available, making it hard to judge quality and popularity of specific menu items. Restaurants also lack structured insights, limiting their ability to improve offerings. Without a centralized, AI-powered system to summarize feedback, both users and restaurants face frustration and missed opportunities.
+Currently, selecting a meal at a restaurant is a time-consuming and inefficient process due to the scattered nature of customer reviews across multiple online platforms. Users must manually search through various sources such as Facebook, X, and Instagram to identify recommended dishes, leading to information overload, inconsistencies, and difficulty in decision-making.
 
-\section{Related Research and Projects}
-Prior work in AI-driven sentiment analysis and recommendation systems has improved restaurant-level ratings, but gaps remain. DishDive targets dish-specific recommendations, integrates AI-driven sentiment analysis and keyword extraction, and leverages real-time social media data to surface trending dishes. User preference features personalize suggestions, making the system more interactive and tailored to individual tastes.
+Additionally, sentiment and keyword analysis are not readily available, making it challenging for users to assess the overall quality and popularity of specific menu items. Restaurants also lack structured insights into customer preferences, limiting their ability to improve their offerings effectively.
+
+Without a centralized system to analyze and summarize customer feedback, users face frustration, delays, and suboptimal dining choices, while restaurants miss opportunities to optimize their menus based on real-time consumer sentiment. The absence of a data-driven approach highlights the need for an AI-powered solution to streamline the process of discovering top-rated dishes.
+
+\section{Related research and projects}
+Several research studies and projects have explored AI-driven sentiment analysis and recommendation systems, particularly in the food and restaurant industry [5]. However, existing solutions face limitations that DishDive aims to address:
+
+\begin{itemize}
+\item \textbf{Sentiment Analysis for Restaurant Reviews} – Various research projects have utilized Natural Language Processing (NLP) to analyze restaurant reviews, identifying positive and negative sentiments. However, these studies often focus on generic restaurant ratings rather than dish-specific analysis, limiting their usefulness in meal selection [5].
+\item \textbf{Restaurant Recommendation Systems} – Many existing recommendation systems, such as those used by food delivery platforms, suggest restaurants based on overall ratings and location. However, they do not analyze detailed customer feedback on individual dishes, making it difficult for users to select the best meal at a given restaurant [2].
+\item \textbf{Social Media Data Extraction} – Previous research has explored methods for extracting restaurant-related comments from social media. However, these projects often struggle with handling unstructured data and noise, leading to inaccurate or incomplete analysis [4].
+\end{itemize}
+
+DishDive enhances previous research by focusing on dish-specific recommendations rather than restaurant-level ratings. It integrates AI-driven sentiment analysis and keyword extraction to categorize feedback more effectively. Unlike traditional recommendation systems, DishDive leverages real-time social media data to provide up-to-date insights on trending dishes. Additionally, its user preference features allow for personalized meal suggestions, making the system more interactive and tailored to individual tastes.
 
 \section{Requirement Specifications}
-Based on initial evaluation, the implementation must satisfy:
+Based on the initial evaluation, the implementation of DishDive will aim to satisfy the following requirements:
+
+\subsection*{Functional Requirement}
 \begin{itemize}
-	\item Functional: ingest social data, perform sentiment and keyword extraction, store structured results, and deliver personalized recommendations.
-	\item Non-functional: maintain reliability, responsiveness, and up-to-date data freshness while scaling to ongoing social feeds.
+\item Extract, process, and categorize customer comments from social media platforms (Facebook, X, Instagram).
+\item Perform AI-powered sentiment analysis and keyword extraction to assess customer opinions.
+\item Summarize and recommend top-rated dishes based on analyzed feedback.
+\item Provide a searchable restaurant database with an interactive summary map displaying analyzed restaurants in Bangkok.
+\item Enable user registration and authentication, supporting account management and preference customization.
+\item Allow users to set food preferences, save favorite dishes, and contribute their own reviews.
+\item Display detailed comment analysis for each dish, including common associated keywords.
+\item Offer a mobile application with a user-friendly interface for easy access.
+\end{itemize}
+
+\subsection*{Non-Functional Requirement}
+\begin{itemize}
+\item The system is expected to handle several hundred concurrent users, with scalability for future growth.
+\item Mobile Application: Android (version 10 and above) and iOS (version 13 and above).
+\item User-Friendly Interface.
 \end{itemize}
 
 \section{Implementation Plan}
-The project is estimated at roughly 5--6 months, divided into phases such as research and wireframing, database design, backend preparation, demo, web crawling, LLM processing, preference algorithm, frontend display, integration and testing, and finalization. Each phase incrementally delivers working components toward a containerized, deployable DishDive application.
+The DishDive project implementation is estimated to take approximately 5--6 months, divided into key phases as follows:
 
-% Add placeholders for figures
-\begin{figure}[h]
-\centering
-\IfFileExists{path/to/figure2.png}{\includegraphics[width=\textwidth]{path/to/figure2.png}}{\fbox{Figure 2 placeholder}}
-\caption{Figure 2: Example Placeholder}
-\label{fig:example2}
+\subsection*{Phase 1: UX/UI Design (2 weeks)}
+The UX/UI Design phase aims to develop a visually intuitive and user-friendly interface for the DishDive mobile application. The primary objective is to facilitate smooth navigation, establish a clear visual structure, and create an engaging user experience that prioritizes usability and accessibility.
+
+\textbf{Research and Wireframing}
+\begin{itemize}
+\item Conduct competitive analysis on existing food recommendation apps to identify best practices.
+\item Define user personas and user journey mapping based on target audience needs.
+\item Create low-fidelity wireframes outlining key screens such as:
+	\begin{itemize}
+	\item Home screen with personalized recommendations
+	\item Restaurant search and filtering options
+	\item Dish details with customer sentiment analysis
+	\item User profile and preferences settings
+	\end{itemize}
+\end{itemize}
+
+\textbf{High-Fidelity UI and Prototyping}
+\begin{itemize}
+\item Transform wireframes into high-fidelity mockups using Figma, incorporating branding and color schemes.
+\item Develop interactive prototypes to replicate user interactions and application flow.
+\end{itemize}
+
+\subsection*{Phase 2: Database Design (4 weeks)}
+The Database Design phase aims to establish a well-structured DishDive database that efficiently handles storage, retrieval, and management of restaurant data, user preferences, and AI-generated insights. The primary objective is to ensure scalability, data consistency, and optimized query performance, enabling seamless integration between the backend, AI processing system, and mobile application.
+
+\textbf{Data Modeling and Schema Design}
+\begin{itemize}
+\item Define key data entities, including:
+	\begin{itemize}
+	\item Users: Account details, preferences, blacklist, and saved dishes.
+	\item Restaurants: Business name, location, cuisine category, and overall ratings.
+	\item Dishes: Dish name, associated restaurant, customer sentiment, and relevant keywords.
+	\item Reviews: Extracted user comments, sentiment analysis scores, and source platform.
+	\end{itemize}
+\item Develop an Entity-Relationship Diagram (ERD) to illustrate data relationships within the system.
+\item Determine to implement a SQL (MySQL) database based on project requirements.
+\item Apply database normalization (SQL) to reduce redundancy.
+\item Establish an indexing strategy to optimize query efficiency for dish recommendation retrieval.
+\end{itemize}
+
+\textbf{Implementation and Optimization}
+\begin{itemize}
+\item Set up the database environment (MySQL).
+\item Establish schemas or tables based on the finalized Entity-Relationship Diagram (ERD).
+\item Apply data constraints and validation rules to ensure data accuracy and consistency.
+\item Implement stored procedures or indexing methods to enhance query performance and retrieval speed.
+\item Conduct testing on data operations, including retrieval, insertion, and updates, to verify seamless backend integration.
+\item Optimize database performance to support scalability and handle high-concurrency transactions efficiently.
+\end{itemize}
+
+\subsection*{Phase 3: Backend Preparation (4 weeks)}
+The Backend Preparation phase is dedicated to configuring the GoLang server and facilitating seamless integration between the database, AI processing module, and mobile application. The primary goal is to establish a scalable, secure, and high-performance backend infrastructure that supports real-time data processing and communication.
+
+\textbf{Server Configuration and API Development}
+\begin{itemize}
+\item Set up the GoLang backend environment on a cloud-based platform such as GCP.
+\item Design the API architecture to manage user interactions, AI-generated recommendations, and database operations.
+\item Develop RESTful API endpoints for key system functionalities, including:
+	\begin{itemize}
+	\item User Authentication \& Authorization (Account creation, login, and JWT-based security mechanisms).
+	\item Restaurant \& Dish Information Retrieval (Fetching restaurant details, recommended dishes, and user preferences).
+	\item Review Processing (Retrieving AI-analyzed sentiment data and extracted keywords).
+	\end{itemize}
+\item Implement middleware to enhance security, input validation, and request handling.
+	\begin{itemize}
+	\item Checking JWT tokens (Authentication) and verifying permission (Authorization).
+	\item Checking required fields (name, email) and ensuring the data types (number).
+	\item Parsing JSON (body-parser).
+	\end{itemize}
+\item Configure logging and monitoring systems to track API performance and identify potential bottlenecks.
+\end{itemize}
+
+\textbf{Database Integration and Performance Testing}
+\begin{itemize}
+\item Establish a connection between the GoLang server and the database (MySQL) while applying query optimization techniques.
+\item Execute unit testing on API endpoints to validate request processing, response accuracy, and error handling.
+\item Conduct load testing to evaluate system scalability under high concurrent user requests.
+\item Enhance backend response time optimization to enable real-time data processing for mobile application users.
+\end{itemize}
+
+\subsection*{Phase 4: Simple Demo (2 weeks)}
+The Simple Demo phase aims to build a basic functional prototype of DishDive to showcase its core system capabilities. This phase ensures the proper integration and functionality of the frontend, backend, database, and AI processing modules, serving as an early-stage proof of concept before full-scale development.
+
+\textbf{Core Feature Development}
+\begin{itemize}
+\item Establish a test environment for deploying the backend, database, and AI processing system.
+\item Develop a simplified mobile application interface with essential UI elements, including:
+	\begin{itemize}
+	\item Login \& Registration screens for user authentication.
+	\item Restaurant Search \& List View displaying restaurant data retrieved from the database.
+	\item Dish Recommendations Page presenting AI-analyzed dish insights.
+	\end{itemize}
+\item Connect the backend API endpoints to enable data exchange between the mobile app and server.
+\item Test the basic AI recommendation system, retrieving sentiment-analyzed data for selected dishes.
+\end{itemize}
+
+\textbf{Testing and Demo Preparation}
+\begin{itemize}
+\item Perform end-to-end testing to verify seamless communication between the frontend, backend, and database.
+\item Detect and resolve major performance issues or system bottlenecks affecting data flow.
+\item Create a simple UI walkthrough to demonstrate key system interactions.
+\item Finalize a demo version highlighting key features, including restaurant search, AI-driven dish recommendations, and interactive user engagement.
+\end{itemize}
+
+\subsection*{Phase 5: Web Crawling (14 weeks)}
+The Web Crawling phase is dedicated to developing and refining the data extraction pipeline to gather restaurant reviews and dish-specific insights from various online sources. This process ensures the system can acquire real-time, structured data to support AI-driven analysis and recommendations.
+
+\textbf{Crawler Implementation \& Data Integration}
+\begin{itemize}
+\item Determine relevant data sources, including restaurant websites, food review platforms, and social media posts.
+\item Develop web crawlers using Python-based tools such as Selenium and BeautifulSoup for data extraction.
+	\begin{itemize}
+	\item Scraping dynamic web pages.
+	\item Parsing HTML and XML documents (extracting data from static web pages).
+	\end{itemize}
+\item Implement data filtering techniques to eliminate irrelevant or duplicate content.
+\item Organize the extracted data into structured formats, categorizing information into:
+	\begin{itemize}
+	\item Restaurant details (name, location, type, and ratings).
+	\item Dish-specific reviews (customer feedback, sentiment analysis, and commonly associated keywords).
+	\end{itemize}
+\item Store the retrieved data in a temporary staging database for further processing.
+\end{itemize}
+
+\textbf{Data Refinement \& Optimization}
+\begin{itemize}
+\item Apply text-cleaning methods to process extracted data, including the removal of HTML tags, emojis, and unnecessary noise.
+\item Conduct sentiment analysis preprocessing to refine customer feedback for AI-based review categorization.
+	\begin{itemize}
+	\item Text Cleaning (Removing HTML tags).
+	\item Noise Reduction (Removing stop words).
+	\end{itemize}
+\item Develop an automated scheduling system for periodic data extraction, ensuring continuous updates.
+\item Perform performance testing to evaluate crawling speed, data accuracy, and system resource consumption.
+\end{itemize}
+
+\subsection*{Phase 6: LLM Processing (14 weeks)}
+The LLM Processing phase is dedicated to utilizing Large Language Model (LLM) techniques to analyze customer reviews, extract meaningful insights, and generate structured dish recommendations. This stage ensures that the AI system can efficiently process large-scale textual data, perform sentiment analysis, and detect key trends in user feedback.
+
+\textbf{Model Selection \& Data Preparation}
+\begin{itemize}
+\item Choose a suitable LLM framework (LangChain, Google Gemini, Google API) based on system requirements.
+\item Process and clean textual data from the web crawling phase, ensuring it is structured for analysis.
+\item Instruct the sentiment analysis model to categorize customer feedback into positive, negative, or neutral.
+\item Apply keyword extraction methods to identify commonly mentioned dish names, flavors, and attributes.
+\end{itemize}
+
+\textbf{Model Integration \& Performance Tuning}
+\begin{itemize}
+\item Connect the LLM model to the backend to enable real-time AI-powered analysis.
+\item Implement prompt engineering strategies to improve the accuracy and relevance of generated recommendations.
+\item Develop response filtering mechanisms to ensure outputs remain unbiased and contextually appropriate.
+	\begin{itemize}
+	\item Ensuring output appropriateness (off-topic, irrelevant or inappropriate).
+	\item Mitigate Bias (societal bias) — detect and neutralize biased content.
+	\end{itemize}
+\item Perform load testing to evaluate the system’s ability to handle large volumes of customer reviews.
+\item Optimize the AI processing pipeline to maintain a balance between computational efficiency and response speed.
+\end{itemize}
+
+\subsection*{Phase 7: Preference Algorithm (4 weeks)}
+The Preference Algorithm is dedicated to designing an algorithm for tailoring dish recommendations based on user-defined tastes, dietary restrictions, and blacklisted ingredients. By leveraging structured keyword matching and ranking mechanisms, this system ensures that recommendations align with individual user preferences while maintaining performance efficiency.
+
+\textbf{Preference Matching \& Data Structuring}
+\begin{itemize}
+\item Design a user preference database that stores selected attributes such as preferred flavors, dietary restrictions, and blacklisted ingredients.
+\item Preference settings are based on extracted keywords such as ingredient type, flavor profile, and cuisine style. Additionally, users can adjust sentiment score thresholds to prioritize dishes with higher or lower positivity ratings.
+\item Implement a matching algorithm that assigns priority scores by comparing user preferences with dish attributes.
+\item Ensure blacklist functionality overrides all other preferences, filtering out dishes containing explicitly unwanted ingredients.
+\end{itemize}
+
+\textbf{Ranking System \& Recommendation Optimization}
+\begin{itemize}
+\item Establish a weighted scoring model where dishes matching multiple preferences receive higher rankings for a specific user.
+\item Implement a sorting mechanism to prioritize recommendations from highest to lowest relevance by default, and apply the weighted scores for each individual user.
+\item Optimize query execution using indexed searches to minimize processing time for preference-based filtering.
+\item Perform periodic evaluations to fine-tune ranking weights and ensure accurate, user-centric recommendations.
+\end{itemize}
+
+\subsection*{Phase 8: Frontend Display (4 weeks)}
+The Frontend Display phase is dedicated to developing and refining the user interface (UI) to provide an engaging, user-friendly, and responsive experience for DishDive users. This phase ensures that AI-driven recommendations, restaurant details, and user preferences are seamlessly integrated into the mobile application for a smooth and intuitive interaction.
+
+\textbf{UI Development \& Data Integration}
+\begin{itemize}
+\item Implement frontend components to support core functionalities, including:
+	\begin{itemize}
+	\item Restaurant search and filtering for personalized discovery.
+	\item Dish recommendation display featuring AI-analyzed insights.
+	\item Customer review summaries presenting sentiment trends and keywords.
+	\item User profile and preference management to enhance personalized suggestions.
+	\end{itemize}
+\item Establish backend API connections to dynamically retrieve and display real-time restaurant, dish, and review data.
+\item Ensure a responsive design that adapts to different screen sizes and mobile devices.
+\item Enable real-time UI updates, allowing users to receive live recommendations and modify preferences effortlessly.
+\end{itemize}
+
+\textbf{User Experience Enhancement \& Testing}
+\begin{itemize}
+\item Improve UI transitions and animations to ensure a fluid and visually appealing user experience.
+\item Conduct usability testing to evaluate accessibility, ease of navigation, and overall user satisfaction.
+\item Optimize frontend performance by enhancing load times and refining data-fetching processes.
+\item Implement error-handling mechanisms to manage API failures and slow response times efficiently.
+\end{itemize}
+
+\subsection*{Phase 9: Integration \& Testing (2 weeks)}
+The Integration and Testing phase focuses on seamlessly connecting all system components — including the frontend, backend, database, AI processing, and web crawling modules — to ensure they function cohesively. This phase is critical for validating system stability, performance, and reliability before the final deployment.
+
+\textbf{System Integration}
+\begin{itemize}
+\item Establish connections between all key components, including the mobile application, backend APIs, AI-driven recommendation engine, and database.
+\item Ensure smooth data exchange across modules, maintaining real-time updates and synchronization.
+\item Conduct API validation to confirm that requests and responses function correctly.
+\item Set up logging and monitoring tools to track system operations and detect potential issues.
+\end{itemize}
+
+\textbf{Testing and Performance Optimization}
+\begin{itemize}
+\item Execute functional testing to verify that core features such as search, recommendations, and user preferences, are operating as intended.
+\item Conduct performance testing to measure response times and optimize database queries.
+\item Implement security testing to ensure authentication, authorization, and data protection.
+	\begin{itemize}
+	\item Prevent Abuse.
+	\item Minimized load from unauthorized access.
+	\end{itemize}
+\item Identify and resolve bugs, inconsistencies, or system bottlenecks to enhance system efficiency.
+\end{itemize}
+
+\subsection*{Phase 10: Finalization (2 weeks)}
+The Finalization phase is dedicated to preparing the system for public release, ensuring all necessary adjustments are made, and finalizing documentation for deployment and user adoption.
+
+\textbf{Final Optimizations and Deployment Readiness}
+\begin{itemize}
+\item Apply UI/UX refinements based on testing feedback to enhance user experience.
+\item Improve AI recommendation accuracy to deliver more relevant dish suggestions.
+\item Finalize database indexing and caching strategies for optimized performance.
+\item Verify cloud infrastructure readiness to support stable and scalable operations.
+\end{itemize}
+
+\textbf{Documentation and Deployment Execution}
+\begin{itemize}
+\item Complete technical documentation detailing the backend, AI processes, and database structures.
+\item Deploy the system to live production environments, including cloud servers, Google Play, and the App Store.
+\item Monitor post-launch system performance and collect user feedback for future enhancements.
+\item Conduct a post-deployment evaluation to assess initial user experience and system stability.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[trim={0.7cm 5.5cm 0.7cm 5.5cm}, clip, width=450pt]{img-001.png}
+  \caption{DishDive Sprint-Based Gantt Chart}
 \end{figure}

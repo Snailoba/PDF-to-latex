@@ -2,40 +2,327 @@
 \chapter{System Analysis and Design}
 
 \section{Analysis of the Existing System}
-The current approach to discovering restaurant dishes relies on manual searches across social platforms, food blogs, and review sites. Users face unstructured information and inefficiencies when identifying the best dishes, and there is no automated, structured recommendation workflow.
+The current approach to discovering restaurant dishes heavily relies on manual searches across multiple online platforms, including social media, food blogs, and review websites. Users must sift through scattered and unstructured information, leading to inefficiencies, inconsistencies, and difficulty in identifying the best dishes. The absence of an automated and structured recommendation system creates a time-consuming and often frustrating experience for users.
 
 \subsection{Current System Workflow}
+\textbf{1) Google Reviews} is integrated into the broader Google ecosystem, leveraging Google's robust infrastructure to manage and display user-generated reviews across various services.
 \begin{itemize}
-	\item Google Reviews: integrated into the Google ecosystem to manage and display user-generated reviews across services.
-	\item Wongnai (LINE MAN Wongnai): Thai platform for restaurant reviews, food delivery, and lifestyle content, serving users and merchants.
-	\item Tabelog: Japanese review platform with heavy user-generated content and rankings.
+	\item \textbf{Data Collection:} User reviews are submitted through Google Maps or Search interfaces.
+	\item \textbf{Data Storage:} Reviews are stored in Google's distributed databases.
+	\item \textbf{Processing:} Sentiment analysis and spam detection algorithms assess the content of reviews. Machine learning models may be used to prioritize reviews and detect anomalies.
+	\item \textbf{Display:} Relevant reviews are displayed on Google Maps and Search results, often sorted by relevance or recency. Businesses can respond to reviews through their Google Business Profile.
 \end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=95pt]{img-002.png}
+\caption{Google Reviews System Workflow}
+\end{figure}
+
+\textbf{2) Wongnai}, now part of LINE MAN Wongnai, is a Thai platform offering restaurant reviews, food delivery, and lifestyle content. Its architecture supports a wide range of services catering to both users and merchants.
+\begin{itemize}
+	\item \textbf{User Interaction:} Users can search for restaurants, read and write reviews, and place orders. Merchants can manage their profiles and menus through dedicated interfaces.
+	\item \textbf{Backend Services:} Microservices architecture handles different functionalities like search, reviews, and ordering. Services are developed using languages like Java and Go.
+	\item \textbf{Data Management:} Data is stored in PostgreSQL databases, with considerations for scalability and performance. Data pipelines are established for analytics and reporting purposes.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=95pt]{img-003.png}
+\caption{Wongnai System Workflow}
+\end{figure}
+
+\textbf{3) Tabelog} is a Japanese restaurant review platform that emphasizes user-generated content and rankings. Its architecture supports a large volume of reviews and restaurant data.
+\begin{itemize}
+	\item \textbf{User Interaction:} Users can browse restaurant listings, submit reviews, and upload photos.
+	\item \textbf{Backend Services:} The platform utilizes a combination of Ruby on Rails for the frontend and a custom backend framework. Services are designed to handle high traffic and ensure quick response times.
+	\item \textbf{Data Management:} Data is stored in relational databases, with indexing for efficient search capabilities. Caching mechanisms are employed to enhance performance.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=95pt]{img-004.png}
+\caption{Tabelog System Workflow}
+\end{figure}
 
 \subsection{Challenges in the Existing System}
+\textbf{Lack of Personalization}
 \begin{itemize}
-	\item Lack of personalization; dish-level sentiment is rarely surfaced.
-	\item Limited dish-level insights (e.g., Tabelog seldom breaks down to individual dishes).
-	\item Time-consuming decision-making due to scattered data and manual review.
-	\item No real-time data processing; insights are not kept current.
+	\item \textbf{Google Reviews:} Shows generalized restaurant ratings, no tailored dish suggestions.
+	\item \textbf{Wongnai:} Offers restaurant suggestions based on location/popularity, not individual taste profiles.
+	\item \textbf{Tabelog:} Focuses on chef or location reputation; no personalization of dishes.
 \end{itemize}
 
-\section{User Requirement Analysis}
-Requirements gathered from surveys and interviews with diners and review-platform users include:
+\textbf{Limited Dish-Level Insights}
 \begin{itemize}
-	\item Personalized, accurate recommendations tailored to taste, dietary needs, and history.
-	\item Real-time, reliable information aggregated from blogs, review platforms, and social media.
-	\item Intuitive, user-friendly interface with advanced search and filtering (location, cuisine, dietary restrictions).
-	\item Comprehensive dish insights with sentiment trends and key feedback.
-	\item Efficient performance under load; interactive features to save favorites, submit reviews, and refine recommendations.
+	\item \textbf{Google Reviews:} Often tags the restaurant overall; dish mentions are anecdotal.
+	\item \textbf{Wongnai:} Some dish mentions, but buried within restaurant-focused pages.
+	\item \textbf{Tabelog:} Rarely breaks down sentiment to the individual dish level.
 \end{itemize}
+
+\textbf{Time-Consuming Decision-Making}
+\begin{itemize}
+	\item \textbf{Google Reviews:} Users scroll through long review threads without dish filters.
+	\item \textbf{Wongnai:} Requires switching tabs between menus, user reviews, and articles.
+	\item \textbf{Tabelog:} Heavy reliance on user judgment to parse subjective, non-sorted dish mentions.
+\end{itemize}
+
+\textbf{No Real-Time Data Processing}
+\begin{itemize}
+	\item \textbf{Google Reviews:} Static once posted; no clear trend tracking for dishes.
+	\item \textbf{Wongnai:} Lacks dynamic update features for newly trending dishes.
+	\item \textbf{Tabelog:} Restaurant ratings are slow to reflect changes in food quality or trending items.
+\end{itemize}
+
+\section{User requirement analysis}
+
+The user requirement analysis aims to identify user expectations, preferences, and key functionalities necessary for an efficient and seamless dining recommendation experience. The requirements were gathered through surveys, interviews, and observations of user interactions with restaurant review platforms and food recommendation systems.
+
+\textbf{Primary User Requirements}
+
+\textbf{Personalized and Accurate Recommendations} -- Users seek AI-powered dish suggestions tailored to their taste preferences, dietary needs, and past selections.
+
+\textbf{Real-Time and Reliable Information} -- Users require up-to-date, accurate restaurant and dish details, sourced from food blogs, review platforms, and social media.
+
+\textbf{Intuitive and User-Friendly Interface} -- The mobile application must be easy to navigate, visually appealing, and simple to use for a smooth experience.
+
+\textbf{Comprehensive Dish Insights} -- Users prefer well-structured summaries that highlight sentiment trends, flavors, and key customer feedback for each dish.
+
+\textbf{Advanced Search and Filtering Options} -- Users want to search and filter restaurants or dishes based on location, cuisine, and dietary restrictions.
+
+\textbf{Efficient System Performance} -- The platform must maintain fast response times and smooth operation, even under high user traffic.
+
+\textbf{Interactive User Features} -- Users desire options to save favorite dishes, submit reviews, and refine recommendations based on their interactions.
+
+These requirements were collected through surveys and interviews with food enthusiasts, restaurant-goers, and online review users, ensuring that DishDive is designed to meet real-world user expectations effectively.
 
 \section{New System Design}
-The DishDive design introduces AI-driven sentiment analysis, real-time data extraction, and structured recommendations to automate and optimize discovery of the best dishes. A backend stack (data collection, LLM processing, database, recommendation engine) supports a mobile-first front end. (Diagrams such as the site map, data flow, activity diagrams, and system architecture belong here once recreated.)
 
-% Add placeholders for figures
-\begin{figure}[h]
+\subsection{Site Map}
+
+\begin{figure}[H]
 \centering
-\IfFileExists{path/to/figure3.png}{\includegraphics[width=\textwidth]{path/to/figure3.png}}{\fbox{Figure 3 placeholder}}
-\caption{Figure 3: Example Placeholder}
-\label{fig:example3}
+\includegraphics[width=450pt]{img-005.png}
+\caption{Site Map}
 \end{figure}
+
+The site map outlines the navigation structure of the DishDive web application, designed to help users explore food-related data. The home page serves as the central hub, containing the search function, list view and map view toggle, and also linking to other pages including profile, restaurants, and favorites. The profile page offers access to user-specific tools like editing personal information, setting food preferences, and managing a blacklist. The preferences and blacklist pages can also be accessed via the filter modal on the search bar of the home page.
+
+\subsection{Data Processing Data Flow Diagram}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=450pt]{img-006.png}
+\caption{Data Processing Data Flow Diagram}
+\end{figure}
+
+This data flow diagram outlines how review data from both external sources and in-app submissions is collected, cleaned, and structured for downstream use.
+
+There are 2 main sources of data, review websites and user reviews submitted directly in-app. Review Websites are scraped periodically to collect user-generated content about restaurants and dishes. This raw text often includes noise like emojis, or inconsistent formatting. User reviews submitted directly in-app go through a parallel but lighter process, since the structure is slightly more predictable.
+
+\begin{figure}[H]
+\centering
+\includegraphics[trim={2.5cm 8.3cm 2.5cm 8.3cm}, clip, width=450pt]{img-007.png}
+\caption{Simplified Data Processing Flow}
+\end{figure}
+
+Conceptually, as depicted in the Simplified Data Processing Flow, the system's core function is to take a user-submitted review (from either the in-app form or web scraping), employ the Large Language Model (LLM) with a set prompt to process and structure the data, and generate the final output, which is the structured foundation for a dish's summarized analysis.
+
+\textbf{Preprocessing:} This initial stage for both web reviews and user reviews refers to cleaning and formatting the texts. This includes removing redundant sections, splitting paragraphs, stripping unnecessary characters, and removing duplicate content. Both sets of cleaned texts are then stored in separate holding tables, the Web Reviews Table and the User Reviews Table.
+
+\textbf{LLM Cleaning and Processing:} This is where the LLM interprets and extracts structured data. Junk reviews (those missing dish names) are discarded. Valid reviews are parsed into structured JSON outputs containing dish names, restaurant names, cuisine, restriction, sentiments, and keywords. These outputs are then logged into the Reviews Extract table as raw extracted data, serving as a staging area.
+
+\textbf{Postprocessing:} Following the LLM processing, the data undergoes this crucial stage to transform the raw extracted JSON data from the Reviews Extract table into normalized, row-based data suitable for the relational database. During postprocessing, the system performs entity identification and resolution. Extracted restaurant names and dish names are matched against existing, canonical records in the Restaurants and Dishes tables (including the Dishes\_alias table). If a restaurant or dish is encountered for the first time, a new, canonical record is created in the respective master table, and a unique ID is generated by the database system. This ensures that all entities in the database are uniquely identified and consistent. Similarly, new keywords identified during the LLM process are added to the Keywords table, which also generates unique keyword\_ids.
+
+\textbf{Final Storage:} The primary output of the Postprocessing stage is stored in the Dish Sentiment Table. This table captures the granular sentiment analysis results, linking them directly to the newly resolved or created canonical dish\_id and res\_id. Each relevant piece of the structured data from the Dish Sentiment is then split and sent to the Keywords table and the Dishes table. Finally, the relationships between these processed dishes and keywords, identified during analysis, are established and recorded in the Dishes\_Keywords Join Table.
+
+Once the data is normalized and stored across the relational tables (including the Dish Sentiment Table, Keywords Table, and the Dishes\_Keywords Join Table), the cycle is complete, and the data is ready for the client application. When a user performs a search on the DishDive mobile application, the GoLang backend server queries these final tables. The server uses the structured sentiment scores and keywords to aggregate a summarized analysis for each dish. This summarized analysis, which includes each restaurant’s top-rated dishes and their corresponding sentiment overviews, is then transmitted back to the mobile application. This ensures that the user is presented with accurate, real-time, and data-driven insights, effectively streamlining their dining decision-making process as intended by the project’s objective.
+
+\subsection{Search \& Display Process UML Activity Diagram}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=280pt]{img-008.png}
+\caption{Search \& Display Process UML Activity Diagram}
+\end{figure}
+
+This UML activity diagram illustrates the process of a user searching for a dish and receiving restaurant and dish recommendations.
+
+The process begins with a user inputting a dish name as a search query. The system queries the Dishes table to find information related to the entered dish name. From the results obtained from the Dishes table, the system extracts relevant restaurant IDs associated with the dish.
+
+These extracted restaurant IDs are then used to query the Restaurant table to retrieve details about the restaurants. Based on the retrieved restaurant information, nearby restaurants that serve the searched dish will be displayed.
+
+The user can choose restaurants from the list, then go into the chosen restaurant’s page to view the dish listing menu. Finally, the system displays dish recommendations to the user, which are tailored based on their search, preferences, and related dish data.
+
+Optionally, the user could set the preferences and blacklist before choosing a restaurant. The decision data is stored in the Preferences table, which will be used in the recommendation algorithm.
+
+\subsection{Recommendation Algorithm Flow Chart}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=190pt]{img-009.png}
+\caption{Recommendation Algorithm Flow Chart}
+\end{figure}
+
+This flow chart details the step-by-step process of the recommendation algorithm, which refines a default list of dishes into personalized top recommendations for the user.
+
+The process begins with a default list of dishes sorted by sentiment scores. This list represents an initial ranking of dishes based on their inherent sentiment scores. Next, the algorithm checks the preferences table for preferred or blacklisted keywords. This step involves accessing the Preferences table.
+
+A critical decision point follows, where the system checks the Dishes\_Keywords join table for dishes containing preferred or blacklisted keywords. If a dish contains preferred keywords, its score is boosted by adding 10 scores per matching keyword. If a dish contains blacklisted keywords, its score is multiplied by 0, effectively removing it from consideration. If no match is found for either preferred or blacklisted keywords, the dish's score remains unchanged from this step. All dishes proceed to the next stage after these score adjustments. For the sentiment score settings, plus 10 if a dish’s sentiment score is higher than the set preferred value, and multiply by 0 if a dish’s sentiment score is below a set blacklist value.
+
+The algorithm then performs another crucial decision, checking if the dish is in the Favorites table or not. If a dish is in the Favorites table, its final score is multiplied by x2, giving it a significant boost. If the dish is not in the Favorites table, its score is not affected by this step.\\
+
+After all these scoring adjustments, the algorithm proceeds to sort the new list by final scores. This re-ranks all dishes based on their accumulated scores. Finally, the algorithm concludes by displaying the list as top recommendations to the user, presenting a personalized and refined selection of dishes.
+
+\subsection{ER Diagram}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=450pt]{img-010.png}
+\caption{ER Diagram}
+\end{figure}
+
+This ER Diagram illustrates the database schema designed to support a dish search and recommendation system, focusing on users, dishes, restaurants, reviews, and personalized preferences.
+
+\textbf{1. Users:} Stores information about registered users of the system.
+
+\textit{user\_id} (Primary Key, INT, NOT NULL): Unique identifier for each user.
+
+\textit{user\_name} (TEXT, NOT NULL): The user's display name or username.
+
+\textit{image\_link} (TEXT): A URL or path to the user's profile image.
+
+\textbf{2. Restaurants:} Contains details about various restaurants.
+
+\textit{res\_id} (Primary Key, INT, NOT NULL): Unique identifier for each restaurant.
+
+\textit{res\_name} (TEXT, NOT NULL): The name of the restaurant.
+
+\textit{res\_cuisine} (TEXT): The type of cuisine the restaurant serves (e.g., Italian, Thai).
+
+\textit{res\_restriction} (TEXT): Any dietary restrictions or special features associated with the restaurant (e.g., Vegan, Halal).
+
+\textit{menu\_size} (INT, NOT NULL): The total number of items available on the restaurant's menu.
+
+\textit{usable\_rev} (INT, NOT NULL): The count of reviews deemed "usable" or relevant for the restaurant.
+
+\textit{total\_rev} (INT, NOT NULL): The total count of all reviews received for the restaurant.
+
+\textbf{3. Dishes:} Stores information about individual dishes, serving as the central entity for recommendations.
+
+\textit{dish\_id} (Primary Key, INT, NOT NULL): Unique identifier for each dish.
+
+\textit{res\_id} (Foreign Key, INT, NOT NULL): Links to the Restaurants table, indicating which restaurant serves this dish.
+
+\textit{dish\_name} (TEXT, NOT NULL): The name of the dish.
+
+\textit{cuisine} (TEXT): The cuisine type of the dish
+
+\textit{restriction} (TEXT): Any dietary restrictions or features specific to the dish.
+
+\textit{positive\_score} (INT, NOT NULL): A score reflecting positive sentiment towards the dish.
+
+\textit{negative\_score} (INT, NOT NULL): A score reflecting negative sentiment towards the dish.
+
+\textit{total\_score} (DOUBLE, NOT NULL): An overall aggregated sentiment score for the dish.
+
+\textbf{4. Dishes\_alias:} Manages alternative names or common misspellings for dishes to improve searchability.
+
+\textit{da\_id} (Primary Key, INT, NOT NULL): Unique identifier for each dish alias record.
+
+\textit{dish\_id} (Foreign Key, INT, NOT NULL): Links to the Dishes table, indicating which dish this alias belongs to.
+
+\textit{alt\_name} (TEXT, NOT NULL): An alternative name for the dish.
+
+\textbf{5. Keywords:} Stores a master list of all keywords used in the system for categorization, preferences, and sentiment analysis.
+
+\textit{keyword\_id} (Primary Key, INT, NOT NULL): Unique identifier for each keyword.
+
+\textit{keyword} (TEXT, NOT NULL): The actual keyword (e.g., "spicy", "cheap", "delicious").
+
+\textit{category} (TEXT): A broader category for the keyword (e.g., "taste", "cost", "others").
+
+\textbf{6. Keywords\_alias:} Manages alternative words or phrases for keywords to enhance matching and search capabilities.
+
+\textit{ka\_id} (Primary Key, INT, NOT NULL): Unique identifier for each keyword alias record.
+
+\textit{keyword\_id} (Foreign Key, INT, NOT NULL): Links to the Keywords table, indicating which keyword this alias belongs to.
+
+\textit{alt\_word} (TEXT, NOT NULL): An alternative word or phrase for a keyword.
+
+\textbf{7. Favorites (Join Table):} Represents the many-to-many relationship between Users and Dishes that a user has explicitly marked as a "favorite". It tracks only the favorited relationships.
+
+\textit{user\_id} (Foreign Key, INT, NOT NULL): Links to the Users table.
+
+\textit{dish\_id} (Foreign Key, INT, NOT NULL): Links to the Dishes table.
+
+\textbf{8. Dishes\_keywords (Join Table):} Represents the many-to-many relationship between Dishes and Keywords, indicating which keywords are associated with which dishes.
+
+\textit{dish\_id} (Foreign Key, INT, NOT NULL): Links to the Dishes table.
+
+\textit{keyword\_id} (Foreign Key, INT, NOT NULL): Links to the Keywords table.
+
+\textit{frequency} (INT, NOT NULL): Tracks how many times a particular keyword has been associated with a specific dish, used to calculate top keywords.
+
+\textbf{9. Preferences/Blacklist (Table):} Stores user-specific preferences and blacklisted keywords, allowing for personalized recommendations.
+
+\textit{user\_id} (Foreign Key, INT, NOT NULL): Links to the Users table.
+
+\textit{keyword\_id} (Foreign Key, INT, NOT NULL): Links to the Keywords table.
+
+\textit{preference} (FLOAT): A numerical value (usually 0 or 1) indicating a positive preference for the keyword.
+
+\textit{blacklist} (FLOAT): A numerical value (usually 0 or 1) indicating a blacklisted status for the keyword.
+
+\textbf{10. Web\_reviews:} Stores raw review data scraped or imported from external web sources.
+
+\textit{web\_rev\_id} (Primary Key, INT, NOT NULL): Unique identifier for each web review.
+
+\textit{res\_name} (TEXT, NOT NULL): The restaurant name as it appeared in the web review.
+
+\textit{web\_rev} (TEXT, NOT NULL): The full text content of the web review.
+
+\textit{is\_junk} (BOOLEAN, NOT NULL): A flag indicating if the review is deemed as junk or not. If the review doesn’t mention any dish names, then it will be considered junk.
+
+\textbf{11. User\_reviews:} Stores reviews written directly by users of the system.
+
+\textit{user\_rev\_id} (Primary Key, INT, NOT NULL): Unique identifier for each user review.
+
+\textit{user\_id} (Foreign Key, INT, NOT NULL): Links to the Users table, indicating who wrote the review.
+
+\textit{dish\_id} (Foreign Key, INT, NOT NULL): Links to the Dishes table, indicating which dish this review is for.
+
+\textit{res\_id} (Foreign Key, INT, NOT NULL): Links to the Restaurants table, indicating which restaurant this dish review is for.
+
+\textit{user\_rev} (TEXT, NOT NULL): The full text content of the user's review.
+
+\textbf{12. Reviews\_extract:} Stores extracted or processed data points from various review sources (both web and user reviews).
+
+\textit{rev\_ext\_id} (Primary Key, INT, NOT NULL): Unique identifier for each extracted review.
+
+\textit{source\_type} (TEXT, NOT NULL): Indicates the original source type of the review.
+
+\textit{source\_id} (Foreign Key, INT, NOT NULL): Links to the specific review ID in its source table (e.g., web\_rev\_id from Web\_reviews or user\_rev\_id from User\_reviews).
+
+\textit{data\_extract} (JSON, NOT NULL): Stores structured data extracted from the review content in JSON format.
+
+\textbf{13. Dish\_sentiment:} Stores the results of sentiment analysis performed on review extracts, associating sentiment with specific dishes and restaurants.
+
+\textit{final\_rev\_id} (Primary Key, INT, NOT NULL): Unique identifier for each sentiment record.
+
+\textit{source\_type} (TEXT, NOT NULL): Indicates the original source type of the review (web or user)
+
+\textit{source\_id} (Foreign Key, INT, NOT NULL): The ID of the original review from its source
+
+\textit{dish\_id} (Foreign Key, INT, NOT NULL): Links to the Dishes table.
+
+\textit{res\_id} (Foreign Key, INT, NOT NULL): Links to the Restaurants table.
+
+\textit{cuisine} (TEXT): The cuisine type.
+
+\textit{restriction} (TEXT): Dietary restrictions.
+
+\textit{sentiment} (TEXT, NOT NULL): The determined sentiment (e.g., 'positive', 'negative', 'neutral').
+
+\textit{keyword} (TEXT): Keywords extracted during sentiment analysis that contributed to the sentiment.

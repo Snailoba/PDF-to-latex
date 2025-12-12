@@ -2,46 +2,76 @@
 \chapter{Summary and Suggestions}
 
 \section{Project Summary and Conclusion}
-DishDive met its core objective: using AI to convert unstructured restaurant reviews into concise, actionable menu insights for users facing decision fatigue. By synthesizing sentiment and keywords via an LLM, the system delivers summarized recommendations. The functional prototype (Flutter, Go, PostgreSQL) implemented and validated all seven assessable features (F1--F7), showing the viability of AI-driven menu analysis and providing a scalable, maintainable application.
+
+The DishDive application successfully met its core objective: to leverage Artificial Intelligence (AI) to transform overwhelming, unstructured restaurant reviews into concise, actionable menu insights for users facing decision fatigue. By synthesizing sentiment and keywords extracted by a Large Language Model (LLM), the system provides summarized recommendations, ensuring a quick and confident dining choice.
+
+The final system is a robust, three-tier functional prototype built with a modern stack (Flutter, Go, PostgreSQL). All seven assessable features (F1 through F7) were implemented and successfully validated during the testing phase, proving the viability of the AI-driven menu analysis concept. The project delivered a scalable, maintainable application that achieved its stated goal of simplifying the restaurant dining experience.
 
 \section{Problems Encountered and Solutions}
-Two main technical challenges required adaptation during data acquisition and AI processing.
+
+Throughout the development lifecycle, two primary technical challenges arose, requiring significant adaptation in the data acquisition and AI processing phases.
 
 \subsection{Web Scraper and Data Acquisition}
-Automated scraping handled Google Maps reviews but struggled with high-review-count Wongnai shops due to dynamic loading and protections. Solution: dual strategy with automated scraping for shops under 8 reviews and manual-assisted scraping for heavier pages. Roughly 340 shops required manual work over three days to reach the needed data volume.
 
-\subsection{Large Language Model Selection}
-A local open-source model (Ollama Qwen) could not produce reliable structured JSON for the complex prompt. Pivoting to GPT-4o mini immediately solved extraction quality, validating the core approach and enabling completion of API and app integration.
+The process of acquiring a sufficient volume of high-quality, relevant restaurant reviews proved more complex than initially planned. While the web scraping module performed reliably for publicly accessible Google Maps reviews, challenges arose when integrating with local review platforms, specifically Wongnai. The platform’s architecture required a dynamic scraping approach.
 
-\section{Suggestions for Further Development (DishDive 2.0)}
+\textbf{The Challenge and Solution:}
+
+The initial automated web scraping script failed to reliably collect data from shops with a high volume of reviews (>8 reviews) due to protective measures and complex dynamic loading. To meet the necessary data quota for the proof of concept, a dual-strategy approach was implemented:
+
+\begin{itemize}
+	\item Automated Scraping: Used for shops with fewer than 8 reviews.
+	\item Manual-Assisted Scraping: Required for shops with 8 or more reviews.
+\end{itemize}
+
+This required a significant manual effort. Approximately 340 shops required manual intervention, a process which ultimately took three full days to complete. This effort was critical to ensuring the database was populated with the required data density for meaningful LLM analysis.
+
+\subsection{Large Language Model (LLM) Selection}
+
+The core novelty of the project depended entirely on the ability of an LLM to reliably extract structured data (sentiment, keywords, entity identification) from noisy, real-world review text based on a complex prompt.
+
+\textbf{The Challenge and Solution:}
+
+Initial attempts utilized a locally hosted, open-source model, Ollama Qwen, in an effort to maintain full cost control. It quickly became apparent that this model was not powerful enough to handle the complexity and nuance required by the project's extraction prompt. The model consistently failed to produce accurate, structured JSON output, hitting a ceiling that halted development progress.
+
+The solution involved a critical and immediate pivot to a commercial, cloud-based solution: the GPT-4o mini model. This switch was successful instantly, as the higher capability model was able to interpret the complex prompt and deliver the required structured output consistently, validating the project's core hypothesis and allowing the team to quickly finalize the API and application integration.
+
+\section{Suggestions for Further Development}
+
+The successful completion of the DishDive prototype lays a strong foundation for future expansion. The following suggestions are proposed for further development (DishDive 2.0):
 
 \subsection{Enhanced Personalization and Recommendation Engine}
-Move beyond aggregate sentiment to collaborative filtering based on user history and preferences for truly personalized dish recommendations.
+
+The current system relies primarily on aggregate sentiment. Future development should incorporate a collaborative filtering engine to provide truly personalized dish recommendations. This would involve tracking user history and preferences to suggest dishes that similar users have enjoyed, moving beyond simple top-rated summaries.
 
 \subsection{Broader Data Acquisition and Scaling}
-Expand beyond Bangkok: ingest other cities/countries and add live social media feeds (X, Instagram) for real-time trends and comments.
+
+The current system focuses solely on the Bangkok area. Future work should focus on:
+\begin{itemize}
+	\item Geographic Expansion: Incorporating restaurants and local review platforms from other major cities and countries.
+	\item Live Social Media Feeds: Expanding the web scraper to handle real-time integration with platforms like X (formerly Twitter) and Instagram to capture the very latest food-related trends and comments.
+\end{itemize}
 
 \subsection{LLM Pipeline Optimization}
-Adopt a cascading strategy to reduce costs: send simple cleaning/sentiment tasks to a cheaper model, reserve GPT-4o mini for complex extraction and summarization.
 
-% Add placeholders for figures
-\begin{figure}[h]
-\centering
-\IfFileExists{path/to/figure5.png}{\includegraphics[width=\textwidth]{path/to/figure5.png}}{\fbox{Figure 5 placeholder}}
-\caption{Figure 5: Example Placeholder}
-\label{fig:example5}
-\end{figure}
+While the switch to GPT-4o mini resolved the core functionality issue, the cost model is commercial. Future optimization should explore implementing an LLM cascading strategy:
+\begin{itemize}
+	\item Pre-filter/Simple Tasks: Route simple sentiment analysis and text cleaning tasks to a cheaper, smaller model (like a specialized fine-tuned model or a cost-effective open-source option).
+	\item Complex Extraction: Reserve the powerful GPT-4o mini only for the most complex entity extraction and summarization tasks. This approach would significantly reduce operational costs while maintaining high quality.
+\end{itemize}
 
-\section*{References}
-\addcontentsline{toc}{section}{References}
+% (No figures for Chapter 5; content restored verbatim.)
+
 \begin{thebibliography}{9}
-\bibitem{Graham2017} Graham, D. J., Orquin, J. L., \& Visschers, V. H. M. (2017). The influence of time of day on decision fatigue in online food choice. \textit{British Food Journal}, 118(3), 735--748. https://doi.org/10.1108/bfj-05-2016-0227
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\bibitem{Graham2017} Graham, D. J., Orquin, J. L., \& Visschers, V. H. M. (2017). The influence of time of day on decision fatigue in online food choice. \textit{British Food Journal}, 118(3), 735--748. \href{https://doi.org/10.1108/bfj-05-2016-0227}{https://doi.org/10.1108/bfj-05-2016-0227}
 
-\bibitem{Greene2024} Greene, D., Nguyen, M., \& Dolnicar, S. (2024). How do you choose your meal when you dine out? A mixed methods study in consumer food-choice strategies in the restaurant context. \textit{Appetite}, 203, 107683. https://doi.org/10.1016/j.appet.2024.107683
+\bibitem{Greene2024} Greene, D., Nguyen, M., \& Dolnicar, S. (2024). How do you choose your meal when you dine out? A mixed methods study in consumer food-choice strategies in the restaurant context. \textit{Appetite}, 203, 107683. \href{https://doi.org/10.1016/j.appet.2024.107683}{https://doi.org/10.1016/j.appet.2024.107683}
 
 \bibitem{HintIt2025} Hint It Staff. (2025, February 9). Decision fatigue in menu design: How restaurants can improve customer choices. Hint-it Blog. \url{https://www.hint.it/blog/decision-fatigue-in-menu-design-how-restaurants-can-improve-customer-choices}
 
-\bibitem{Shin2022} Shin, B., Ryu, S., Kim, Y., \& Kim, D. (2022). Analysis on review data of restaurants in Google Maps through text mining: Focusing on sentiment analysis. \textit{Journal of Multimedia Information System}, 9(1), 61--68. https://doi.org/10.33851/JMIS.2022.9.1.61
+\bibitem{Shin2022} Shin, B., Ryu, S., Kim, Y., \& Kim, D. (2022). Analysis on review data of restaurants in Google Maps through text mining: Focusing on sentiment analysis. \textit{Journal of Multimedia Information System}, 9(1), 61--68. \href{https://doi.org/10.33851/JMIS.2022.9.1.61}{https://doi.org/10.33851/JMIS.2022.9.1.61}
 
-\bibitem{Zahrah2024} Zahrah, V. A., Nurdin, \& Risawandi. (2024). Sentiment analysis of Google Maps user reviews on the Play Store using Support Vector Machine and Latent Dirichlet Allocation topic modeling. \textit{International Journal of Engineering, Science and Information Technology}, 4(4), 87--100. https://doi.org/10.52088/ijesty.v4i4.580
+\bibitem{Zahrah2024} Zahrah, V. A., Nurdin, \& Risawandi. (2024). Sentiment analysis of Google Maps user reviews on the Play Store using Support Vector Machine and Latent Dirichlet Allocation topic modeling. \textit{International Journal of Engineering, Science and Information Technology}, 4(4), 87--100. \href{https://doi.org/10.52088/ijesty.v4i4.580}{https://doi.org/10.52088/ijesty.v4i4.580}
 \end{thebibliography}
