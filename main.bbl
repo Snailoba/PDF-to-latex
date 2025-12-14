@@ -1,0 +1,447 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{Graham2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3ee45449d153e9dd97b7ca69c1725af4}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e31d6195b227552934eaad8790c0f60}{%
+           family={Orquin},
+           familyi={O\bibinitperiod},
+           given={Jacob\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b7a16c4768ad8272f465814ee2732f8}{%
+           family={Visschers},
+           familyi={V\bibinitperiod},
+           given={Vivianne\bibnamedelimb H.\bibnamedelimi M.},
+           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7416347575a3cd26e86226799f194b9a}
+      \strng{fullhash}{c26b4bb82a8628786ae66ced320d4405}
+      \strng{bibnamehash}{c26b4bb82a8628786ae66ced320d4405}
+      \strng{authorbibnamehash}{c26b4bb82a8628786ae66ced320d4405}
+      \strng{authornamehash}{7416347575a3cd26e86226799f194b9a}
+      \strng{authorfullhash}{c26b4bb82a8628786ae66ced320d4405}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British Food Journal}
+      \field{number}{3}
+      \field{title}{The influence of time of day on decision fatigue in online food choice}
+      \field{volume}{118}
+      \field{year}{2017}
+      \field{pages}{735\bibrangedash 748}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1108/bfj-05-2016-0227
+      \endverb
+    \endentry
+    \entry{Greene2024}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8c4c25bdc00f4ae53a0f568acd1a4e3f}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1dda5e217d3b524da7983d4342761c0a}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=372aa93da0e3ecea235301c71fe99912}{%
+           family={Dolnicar},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c246a3f8b828251961ba3bfc02973ca6}
+      \strng{fullhash}{ebe69923ea566b9f978597de5234111f}
+      \strng{bibnamehash}{ebe69923ea566b9f978597de5234111f}
+      \strng{authorbibnamehash}{ebe69923ea566b9f978597de5234111f}
+      \strng{authornamehash}{c246a3f8b828251961ba3bfc02973ca6}
+      \strng{authorfullhash}{ebe69923ea566b9f978597de5234111f}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Appetite}
+      \field{title}{How do you choose your meal when you dine out? A mixed methods study in consumer food-choice strategies in the restaurant context}
+      \field{volume}{203}
+      \field{year}{2024}
+      \field{pages}{107683}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.appet.2024.107683
+      \endverb
+    \endentry
+    \entry{HintIt2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=591b61618e98fb848432bfcb5f2f6b26}{%
+           family={{Hint It Staff}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{fullhash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{bibnamehash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{authorbibnamehash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{authornamehash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{authorfullhash}{591b61618e98fb848432bfcb5f2f6b26}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Blog post}
+      \field{journaltitle}{Hint-it Blog}
+      \field{month}{2}
+      \field{title}{Decision fatigue in menu design: How restaurants can improve customer choices}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.hint.it/blog/decision-fatigue-in-menu-design-how-restaurants-can-improve-customer-choices
+      \endverb
+      \verb{url}
+      \verb https://www.hint.it/blog/decision-fatigue-in-menu-design-how-restaurants-can-improve-customer-choices
+      \endverb
+    \endentry
+    \entry{Shin2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3b610362bcfbe8c64f0f1f57ad0f7b74}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59fe2e92f1a64a587a6e505b33371850}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03f38c879ca0bc9f1dcbada69ea0519a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3ee7bee5a5ecb7a55a51ecdd4e78cef}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b04abb681adcbf6d1a1f264481720898}
+      \strng{fullhash}{c50674dd41ad0e9378985a28e8a84a90}
+      \strng{bibnamehash}{c50674dd41ad0e9378985a28e8a84a90}
+      \strng{authorbibnamehash}{c50674dd41ad0e9378985a28e8a84a90}
+      \strng{authornamehash}{b04abb681adcbf6d1a1f264481720898}
+      \strng{authorfullhash}{c50674dd41ad0e9378985a28e8a84a90}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Multimedia Information System}
+      \field{number}{1}
+      \field{title}{Analysis on review data of restaurants in Google Maps through text mining: Focusing on sentiment analysis}
+      \field{volume}{9}
+      \field{year}{2022}
+      \field{pages}{61\bibrangedash 68}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.33851/JMIS.2022.9.1.61
+      \endverb
+    \endentry
+    \entry{Zahrah2024}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e481aa6c41e64d35e642a45d602be9be}{%
+           family={Zahrah},
+           familyi={Z\bibinitperiod},
+           given={V.\bibnamedelimi A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b9ed03dee4b363699f7f56d70e396f6}{%
+           family={Nurdin},
+           familyi={N\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=22d7c982c0a1f103c96513fd3aea5de4}{%
+           family={Risawandi},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{356f14beee00a007b58f0483d61edce2}
+      \strng{fullhash}{e5cd347fccb9fa812e6b8bbaf1e72c87}
+      \strng{bibnamehash}{e5cd347fccb9fa812e6b8bbaf1e72c87}
+      \strng{authorbibnamehash}{e5cd347fccb9fa812e6b8bbaf1e72c87}
+      \strng{authornamehash}{356f14beee00a007b58f0483d61edce2}
+      \strng{authorfullhash}{e5cd347fccb9fa812e6b8bbaf1e72c87}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Engineering, Science and Information Technology}
+      \field{number}{4}
+      \field{title}{Sentiment analysis of Google Maps user reviews on the Play Store using Support Vector Machine and Latent Dirichlet Allocation topic modeling}
+      \field{volume}{4}
+      \field{year}{2024}
+      \field{pages}{87\bibrangedash 100}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.52088/ijesty.v4i4.580
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{Graham2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3ee45449d153e9dd97b7ca69c1725af4}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e31d6195b227552934eaad8790c0f60}{%
+           family={Orquin},
+           familyi={O\bibinitperiod},
+           given={Jacob\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b7a16c4768ad8272f465814ee2732f8}{%
+           family={Visschers},
+           familyi={V\bibinitperiod},
+           given={Vivianne\bibnamedelimb H.\bibnamedelimi M.},
+           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7416347575a3cd26e86226799f194b9a}
+      \strng{fullhash}{c26b4bb82a8628786ae66ced320d4405}
+      \strng{bibnamehash}{c26b4bb82a8628786ae66ced320d4405}
+      \strng{authorbibnamehash}{c26b4bb82a8628786ae66ced320d4405}
+      \strng{authornamehash}{7416347575a3cd26e86226799f194b9a}
+      \strng{authorfullhash}{c26b4bb82a8628786ae66ced320d4405}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British Food Journal}
+      \field{number}{3}
+      \field{title}{The influence of time of day on decision fatigue in online food choice}
+      \field{volume}{118}
+      \field{year}{2017}
+      \field{pages}{735\bibrangedash 748}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1108/bfj-05-2016-0227
+      \endverb
+    \endentry
+    \entry{Greene2024}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8c4c25bdc00f4ae53a0f568acd1a4e3f}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1dda5e217d3b524da7983d4342761c0a}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=372aa93da0e3ecea235301c71fe99912}{%
+           family={Dolnicar},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c246a3f8b828251961ba3bfc02973ca6}
+      \strng{fullhash}{ebe69923ea566b9f978597de5234111f}
+      \strng{bibnamehash}{ebe69923ea566b9f978597de5234111f}
+      \strng{authorbibnamehash}{ebe69923ea566b9f978597de5234111f}
+      \strng{authornamehash}{c246a3f8b828251961ba3bfc02973ca6}
+      \strng{authorfullhash}{ebe69923ea566b9f978597de5234111f}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Appetite}
+      \field{title}{How do you choose your meal when you dine out? A mixed methods study in consumer food-choice strategies in the restaurant context}
+      \field{volume}{203}
+      \field{year}{2024}
+      \field{pages}{107683}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.appet.2024.107683
+      \endverb
+    \endentry
+    \entry{HintIt2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=591b61618e98fb848432bfcb5f2f6b26}{%
+           family={{Hint It Staff}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{fullhash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{bibnamehash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{authorbibnamehash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{authornamehash}{591b61618e98fb848432bfcb5f2f6b26}
+      \strng{authorfullhash}{591b61618e98fb848432bfcb5f2f6b26}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Blog post}
+      \field{journaltitle}{Hint-it Blog}
+      \field{month}{2}
+      \field{title}{Decision fatigue in menu design: How restaurants can improve customer choices}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.hint.it/blog/decision-fatigue-in-menu-design-how-restaurants-can-improve-customer-choices
+      \endverb
+      \verb{url}
+      \verb https://www.hint.it/blog/decision-fatigue-in-menu-design-how-restaurants-can-improve-customer-choices
+      \endverb
+    \endentry
+    \entry{Shin2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3b610362bcfbe8c64f0f1f57ad0f7b74}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59fe2e92f1a64a587a6e505b33371850}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03f38c879ca0bc9f1dcbada69ea0519a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3ee7bee5a5ecb7a55a51ecdd4e78cef}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b04abb681adcbf6d1a1f264481720898}
+      \strng{fullhash}{c50674dd41ad0e9378985a28e8a84a90}
+      \strng{bibnamehash}{c50674dd41ad0e9378985a28e8a84a90}
+      \strng{authorbibnamehash}{c50674dd41ad0e9378985a28e8a84a90}
+      \strng{authornamehash}{b04abb681adcbf6d1a1f264481720898}
+      \strng{authorfullhash}{c50674dd41ad0e9378985a28e8a84a90}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Multimedia Information System}
+      \field{number}{1}
+      \field{title}{Analysis on review data of restaurants in Google Maps through text mining: Focusing on sentiment analysis}
+      \field{volume}{9}
+      \field{year}{2022}
+      \field{pages}{61\bibrangedash 68}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.33851/JMIS.2022.9.1.61
+      \endverb
+    \endentry
+    \entry{Zahrah2024}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e481aa6c41e64d35e642a45d602be9be}{%
+           family={Zahrah},
+           familyi={Z\bibinitperiod},
+           given={V.\bibnamedelimi A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b9ed03dee4b363699f7f56d70e396f6}{%
+           family={Nurdin},
+           familyi={N\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=22d7c982c0a1f103c96513fd3aea5de4}{%
+           family={Risawandi},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{356f14beee00a007b58f0483d61edce2}
+      \strng{fullhash}{e5cd347fccb9fa812e6b8bbaf1e72c87}
+      \strng{bibnamehash}{e5cd347fccb9fa812e6b8bbaf1e72c87}
+      \strng{authorbibnamehash}{e5cd347fccb9fa812e6b8bbaf1e72c87}
+      \strng{authornamehash}{356f14beee00a007b58f0483d61edce2}
+      \strng{authorfullhash}{e5cd347fccb9fa812e6b8bbaf1e72c87}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Engineering, Science and Information Technology}
+      \field{number}{4}
+      \field{title}{Sentiment analysis of Google Maps user reviews on the Play Store using Support Vector Machine and Latent Dirichlet Allocation topic modeling}
+      \field{volume}{4}
+      \field{year}{2024}
+      \field{pages}{87\bibrangedash 100}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.52088/ijesty.v4i4.580
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

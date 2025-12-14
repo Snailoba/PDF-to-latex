@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+Database file #1: references/references.bib
+Warning--I didn't find a database entry for "chatterjee2022iot"
+Warning--I didn't find a database entry for "AAZIZ2017109"
+Warning--I didn't find a database entry for "ATZORI20102787"
+Warning--I didn't find a database entry for "hochreiter1997long"
+Warning--I didn't find a database entry for "he2013imbalanced"
+Warning--I didn't find a database entry for "chawla2002smote"
+Warning--I didn't find a database entry for "van2007experimental"
+Warning--I didn't find a database entry for "provost1998applied"
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            519 strings with 4624 characters,
+and the built_in function-call counts, 1015 in all, are:
+= -- 100
+> -- 41
+< -- 2
++ -- 16
+- -- 14
+* -- 64
+:= -- 149
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 46
+empty$ -- 83
+format.name$ -- 14
+if$ -- 228
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 11
+quote$ -- 0
+skip$ -- 40
+stack$ -- 0
+substring$ -- 74
+swap$ -- 22
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 0
+while$ -- 10
+width$ -- 3
+write$ -- 24
+(There were 8 warnings)

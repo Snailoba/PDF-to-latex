@@ -1,0 +1,56 @@
+\documentclass{classes/SIT-Report-EN}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{lscape}
+\usepackage{longtable}
+
+%%Edit your info Here
+\begin{document}
+\title{How to Break Enigma Codec}
+\titleTH{วิธีถอดรหัสเครื่องอินิกมา}
+\degree{Bachelor of Science}
+\majorProgramEN{Computer Science}
+\academicyear{2024}
+
+\author{Alan Mathison Turing}
+
+\majoradvisor{Asst. Prof. Worarat Krathu, Ph.D.}
+\coadvisor{Asst. Prof. Chonlameth Arpnikanondt, Ph.D.}
+\committeeOne{Asst. Prof. Praset Kanthamanon, Ph.D.}
+\committeeTwo{Asst. Prof. Narongrit Waraporn, Ph.D.}
+\committeeThree{Lect. Tuul Triyason, Ph.D}
+\academicyear{2024}
+
+%%%%%%%%%%
+\maketitle
+\frontmatter
+\maketitleinner
+\makeapproval
+\input{pages/abstract} %%Edit your Abstract
+\input{pages/acknowledgements} %% %%Edit your Acknowledgement
+
+\tableofcontents
+\listoftables
+\listoffigures
+\input{pages/symbols}
+\input{pages/abbreviations}
+
+\mainmatter
+%%insert your content
+\input{chapter1/chapter1}
+\input{chapter2/chapter2}
+\input{chapter3/chapter3}
+\input{chapter4/chapter4}
+\input{chapter5/chapter5}
+
+
+\bibliographystyle{plain}
+\bibliography{references/references}
+\addcontentsline{toc}{chapter}{REFERRENCES}
+
+\begin{appendices}
+	\input{appendix/appendix1}
+\end{appendices}
+
+\end{document}
