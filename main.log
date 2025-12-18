@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9) (preloaded format=pdflatex 2023.9.23)  14 DEC 2025 21:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9) (preloaded format=pdflatex 2023.9.23)  18 DEC 2025 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -931,81 +931,118 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthR=\skip99
 \@temptokenb=\toks40
 )
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count451
+\calc@Bcount=\count452
+\calc@Adimen=\dimen270
+\calc@Bdimen=\dimen271
+\calc@Askip=\skip100
+\calc@Bskip=\skip101
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count453
+\calc@Cskip=\skip102
+)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen272
+\ESO@tempdimb=\dimen273
+)
+\AM@pagewidth=\dimen274
+\AM@pageheight=\dimen275
+\AM@fboxrule=\dimen276
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count454
+\AM@pagebox=\box66
+\AM@global@opts=\toks41
+\AM@pagecnt=\count455
+\AM@toc@title=\toks42
+\AM@lof@heading=\toks43
+\c@AM@survey=\count456
+\AM@templatesizebox=\box67
+)
 LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
- 68.
+ 69.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 68.
-\@quotelevel=\count451
-\@quotereset=\count452
+(Font)              scaled to size 12.0pt on input line 69.
+\@quotelevel=\count457
+\@quotereset=\count458
 
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 68.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 69.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 68.
+ 69.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 69.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-68.
+69.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 69.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 68.
+ 69.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 69.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 68.
+e 69.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count453
-\scratchdimen=\dimen270
-\scratchbox=\box66
-\nofMPsegments=\count454
-\nofMParguments=\count455
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count456
-\MPscratchDim=\dimen271
-\MPnumerator=\count457
-\makeMPintoPDFobject=\count458
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count459
+\scratchdimen=\dimen277
+\scratchbox=\box68
+\nofMPsegments=\count460
+\nofMParguments=\count461
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count462
+\MPscratchDim=\dimen278
+\MPnumerator=\count463
+\makeMPintoPDFobject=\count464
+\everyMPtoPDFconversion=\toks45
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
 se.sty
@@ -1017,10 +1054,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@mv@tabular=\count459
-\c@mv@boldtabular=\count460
-LaTeX Info: Command `\dddot' is already robust on input line 68.
-LaTeX Info: Command `\ddddot' is already robust on input line 68.
+\c@mv@tabular=\count465
+\c@mv@boldtabular=\count466
+LaTeX Info: Command `\dddot' is already robust on input line 69.
+LaTeX Info: Command `\ddddot' is already robust on input line 69.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1064,7 +1101,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 69.
 
 (main.out) (main.out)
 \@outlinefile=\write4
@@ -1108,15 +1145,15 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 68.
-Package biblatex Info: Reference segment=0 on input line 68.
-LaTeX Info: Redefining \microtypecontext on input line 68.
-Package microtype Info: Applying patch `item' on input line 68.
-Package microtype Info: Applying patch `toc' on input line 68.
-Package microtype Info: Applying patch `eqnum' on input line 68.
-Package microtype Info: Applying patch `footnote' on input line 68.
-Package microtype Info: Applying patch `verbatim' on input line 68.
-LaTeX Info: Redefining \microtypesetup on input line 68.
+Package biblatex Info: Reference section=0 on input line 69.
+Package biblatex Info: Reference segment=0 on input line 69.
+LaTeX Info: Redefining \microtypecontext on input line 69.
+Package microtype Info: Applying patch `item' on input line 69.
+Package microtype Info: Applying patch `toc' on input line 69.
+Package microtype Info: Applying patch `eqnum' on input line 69.
+Package microtype Info: Applying patch `footnote' on input line 69.
+Package microtype Info: Applying patch `verbatim' on input line 69.
+LaTeX Info: Redefining \microtypesetup on input line 69.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1131,6 +1168,19 @@ Package microtype Info: No adjustment of character kerning.
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nome
+tadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
 (chapters/front_matter.tex
 <assets/images/img-000.png, id=203, 240.9pt x 196.735pt>
 File: assets/images/img-000.png Graphic file (type png)
@@ -1148,126 +1198,158 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 {C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/User/
 AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-tlf.enc} <./assets/i
 mages/img-000.png (PNG copy)>]
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 28.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 38.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 39.
 
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd
+pdfTeX warning: pdflatex.exe (file ./DishDive_Copyright.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+<DishDive_Copyright.pdf, id=212, 597.6729pt x 845.55902pt>
+File: DishDive_Copyright.pdf Graphic file (type pdf)
+<use DishDive_Copyright.pdf>
+Package pdftex.def Info: DishDive_Copyright.pdf  used on input line 27.
+(pdftex.def)             Requested size: 597.67143pt x 845.55696pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./DishDive_Copyright.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./DishDive_Copyright.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+<DishDive_Copyright.pdf, id=214, page=1, 597.6729pt x 845.55902pt>
+File: DishDive_Copyright.pdf Graphic file (type pdf)
+<use DishDive_Copyright.pdf, page 1>
+Package pdftex.def Info: DishDive_Copyright.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.67143pt x 845.55696pt.
+File: DishDive_Copyright.pdf Graphic file (type pdf)
+<use DishDive_Copyright.pdf, page 1>
+Package pdftex.def Info: DishDive_Copyright.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+File: DishDive_Copyright.pdf Graphic file (type pdf)
+<use DishDive_Copyright.pdf, page 1>
+Package pdftex.def Info: DishDive_Copyright.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+File: DishDive_Copyright.pdf Graphic file (type pdf)
+<use DishDive_Copyright.pdf, page 1>
+Package pdftex.def Info: DishDive_Copyright.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \includepdf[pages=-]{DishDive_Copyright.pdf}
+                                                 
+File: DishDive_Copyright.pdf Graphic file (type pdf)
+<use DishDive_Copyright.pdf, page 1>
+Package pdftex.def Info: DishDive_Copyright.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+ [1
+
+ <./DishDive_Copyright.pdf>]
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
+e 32.
+ (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 32.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `minntx' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 39.
+(Font)              scaled to size 8.8pt on input line 32.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 39.
+(Font)              scaled to size 6.6pt on input line 32.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 39.
+(Font)              scaled to size 8.8pt on input line 32.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 39.
+(Font)              scaled to size 6.6pt on input line 32.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 39.
+(Font)              scaled to size 8.8pt on input line 32.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 39.
+(Font)              scaled to size 6.6pt on input line 32.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 39.
+(Font)              scaled to size 8.8pt on input line 32.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 39.
+(Font)              scaled to size 6.6pt on input line 32.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-39.
+32.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 39.
+(Font)              scaled to size 8.8pt on input line 32.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 39.
+(Font)              scaled to size 6.6pt on input line 32.
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-39.
+32.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 39.
+(Font)              scaled to size 8.8pt on input line 32.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 39.
+(Font)              scaled to size 6.6pt on input line 32.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-39.
+32.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 39.
+(Font)              scaled to size 8.8pt on input line 32.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 39.
+(Font)              scaled to size 6.6pt on input line 32.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 39.
+(Font)              scaled to size 8.8pt on input line 32.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 39.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 40.
+(Font)              scaled to size 6.6pt on input line 32.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 33.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 48.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47 \end{titlepage}
-                     [1]
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.83 \cleardoublepage
-                      [1
+[2
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 15.0pt on input line 84.
- [2
+(Font)              scaled to size 15.0pt on input line 64.
+ [3
 
 
-] (main.toc [3
+] (main.toc [4
 
 ])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [4] (main.lot)
+ [5] (main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [5
+ [6
 
 ] (main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-
-[6
+ [7
 
 ]) (chapters/ch1.tex
 Chapter 1.
@@ -1294,7 +1376,7 @@ Chapter 2.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 13.0pt on input line 36.
  [4] [5] [6] [7] [8] [9] [10]
-<assets/images/img-001.png, id=377, 1927.2pt x 1084.05pt>
+<assets/images/img-001.png, id=381, 1927.2pt x 1084.05pt>
 File: assets/images/img-001.png Graphic file (type png)
 <use assets/images/img-001.png>
 Package pdftex.def Info: assets/images/img-001.png  used on input line 306.
@@ -1306,7 +1388,7 @@ Overfull \hbox (3.20865pt too wide) in paragraph at lines 306--307
 
 ) (chapters/ch3.tex [11] [12 <./assets/images/img-001.png (PNG copy)>]
 Chapter 3.
-<assets/images/img-002.png, id=389, 927.465pt x 2055.68pt>
+<assets/images/img-002.png, id=393, 927.465pt x 2055.68pt>
 File: assets/images/img-002.png Graphic file (type png)
 <use assets/images/img-002.png>
 Package pdftex.def Info: assets/images/img-002.png  used on input line 18.
@@ -1314,19 +1396,19 @@ Package pdftex.def Info: assets/images/img-002.png  used on input line 18.
 [13
 
  <./assets/images/img-002.png (PNG copy)>]
-<assets/images/img-003.png, id=394, 753.81625pt x 2055.68pt>
+<assets/images/img-003.png, id=398, 753.81625pt x 2055.68pt>
 File: assets/images/img-003.png Graphic file (type png)
 <use assets/images/img-003.png>
 Package pdftex.def Info: assets/images/img-003.png  used on input line 31.
 (pdftex.def)             Requested size: 95.0pt x 259.06096pt.
-<assets/images/img-004.png, id=395, 678.535pt x 2055.68pt>
+<assets/images/img-004.png, id=399, 678.535pt x 2055.68pt>
 File: assets/images/img-004.png Graphic file (type png)
 <use assets/images/img-004.png>
 Package pdftex.def Info: assets/images/img-004.png  used on input line 44.
 (pdftex.def)             Requested size: 95.0pt x 287.79324pt.
  [14 <./assets/images/img-003.png (PNG copy)>] [15 <./assets/images/img-004.png
  (PNG copy)>]
-<assets/images/img-005.png, id=404, 1484.54625pt x 598.235pt>
+<assets/images/img-005.png, id=408, 1484.54625pt x 598.235pt>
 File: assets/images/img-005.png Graphic file (type png)
 <use assets/images/img-005.png>
 Package pdftex.def Info: assets/images/img-005.png  used on input line 105.
@@ -1337,7 +1419,7 @@ Overfull \hbox (3.20865pt too wide) in paragraph at lines 105--106
  []
 
 [16 <./assets/images/img-005.png (PNG copy)>]
-<assets/images/img-006.png, id=409, 1501.61pt x 784.9325pt>
+<assets/images/img-006.png, id=413, 1501.61pt x 784.9325pt>
 File: assets/images/img-006.png Graphic file (type png)
 <use assets/images/img-006.png>
 Package pdftex.def Info: assets/images/img-006.png  used on input line 116.
@@ -1347,7 +1429,7 @@ Overfull \hbox (3.20865pt too wide) in paragraph at lines 116--117
  [][] 
  []
 
-<assets/images/img-007.png, id=410, 1927.2pt x 1084.05pt>
+<assets/images/img-007.png, id=414, 1927.2pt x 1084.05pt>
 File: assets/images/img-007.png Graphic file (type png)
 <use assets/images/img-007.png>
 Package pdftex.def Info: assets/images/img-007.png  used on input line 126.
@@ -1359,13 +1441,13 @@ Overfull \hbox (3.20865pt too wide) in paragraph at lines 126--127
 
 [17 <./assets/images/img-006.png (PNG copy)> <./assets/images/img-007.png (PNG 
 copy)>]
-<assets/images/img-008.png, id=418, 924.45375pt x 1496.59125pt>
+<assets/images/img-008.png, id=422, 924.45375pt x 1496.59125pt>
 File: assets/images/img-008.png Graphic file (type png)
 <use assets/images/img-008.png>
 Package pdftex.def Info: assets/images/img-008.png  used on input line 146.
 (pdftex.def)             Requested size: 280.0pt x 453.27403pt.
  [18] [19 <./assets/images/img-008.png (PNG copy)>]
-<assets/images/img-009.png, id=427, 483.8075pt x 1437.37pt>
+<assets/images/img-009.png, id=431, 483.8075pt x 1437.37pt>
 File: assets/images/img-009.png Graphic file (type png)
 <use assets/images/img-009.png>
 Package pdftex.def Info: assets/images/img-009.png  used on input line 164.
@@ -1375,7 +1457,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-<assets/images/img-010.png, id=432, 1113.15875pt x 1054.94125pt>
+<assets/images/img-010.png, id=436, 1113.15875pt x 1054.94125pt>
 File: assets/images/img-010.png Graphic file (type png)
 <use assets/images/img-010.png>
 Package pdftex.def Info: assets/images/img-010.png  used on input line 182.
@@ -1385,10 +1467,13 @@ Overfull \hbox (3.20865pt too wide) in paragraph at lines 182--183
  [][] 
  []
 
-[21] [22 <./assets/images/img-010.png (PNG copy)>] [23]) (chapters/ch4.tex
+[21]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 190.
+ [22 <./assets/images/img-010.png (PNG copy)>] [23]) (chapters/ch4.tex
 [24] [25]
 Chapter 4.
-<assets/images/img-011.png, id=454, 1927.2pt x 1084.05pt>
+<assets/images/img-011.png, id=459, 1927.2pt x 1084.05pt>
 File: assets/images/img-011.png Graphic file (type png)
 <use assets/images/img-011.png>
 Package pdftex.def Info: assets/images/img-011.png  used on input line 38.
@@ -1471,7 +1556,75 @@ Chapter 5.
 ] [32]) [33
 
 
-] (main.aux)
+]
+<Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, id=503, 597.672
+9pt x 845.55902pt>
+File: Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf Graphic fil
+e (type pdf)
+<use Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf>
+Package pdftex.def Info: Project Copyright Transfer Agreement 2025_DishDive_Sig
+ned.pdf  used on input line 103.
+(pdftex.def)             Requested size: 597.67143pt x 845.55696pt.
+<Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, id=505, page=1,
+ 597.6729pt x 845.55902pt>
+File: Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf Graphic fil
+e (type pdf)
+<use Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, page 1>
+Package pdftex.def Info: Project Copyright Transfer Agreement 2025_DishDive_Sig
+ned.pdf , page1 used on input line 103.
+(pdftex.def)             Requested size: 597.67143pt x 845.55696pt.
+File: Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf Graphic fil
+e (type pdf)
+<use Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, page 1>
+Package pdftex.def Info: Project Copyright Transfer Agreement 2025_DishDive_Sig
+ned.pdf , page1 used on input line 103.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+File: Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf Graphic fil
+e (type pdf)
+<use Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, page 1>
+Package pdftex.def Info: Project Copyright Transfer Agreement 2025_DishDive_Sig
+ned.pdf , page1 used on input line 103.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+File: Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf Graphic fil
+e (type pdf)
+<use Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, page 1>
+Package pdftex.def Info: Project Copyright Transfer Agreement 2025_DishDive_Sig
+ned.pdf , page1 used on input line 103.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+File: Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf Graphic fil
+e (type pdf)
+<use Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, page 1>
+Package pdftex.def Info: Project Copyright Transfer Agreement 2025_DishDive_Sig
+ned.pdf , page1 used on input line 103.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+ [34
+
+
+ <./Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf>]
+<Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, id=512, page=2,
+ 597.6729pt x 845.55902pt>
+File: Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf Graphic fil
+e (type pdf)
+<use Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, page 2>
+Package pdftex.def Info: Project Copyright Transfer Agreement 2025_DishDive_Sig
+ned.pdf , page2 used on input line 103.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+File: Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf Graphic fil
+e (type pdf)
+<use Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, page 2>
+Package pdftex.def Info: Project Copyright Transfer Agreement 2025_DishDive_Sig
+ned.pdf , page2 used on input line 103.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+File: Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf Graphic fil
+e (type pdf)
+<use Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf, page 2>
+Package pdftex.def Info: Project Copyright Transfer Agreement 2025_DishDive_Sig
+ned.pdf , page2 used on input line 103.
+(pdftex.def)             Requested size: 597.69879pt x 845.59566pt.
+ [35
+
+ <./Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf>]
+(main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1483,22 +1636,22 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27294 strings out of 475247
- 466744 string characters out of 5758264
+ 28142 strings out of 475247
+ 482947 string characters out of 5758264
  1938801 words of memory out of 5000000
- 48143 multiletter control sequences out of 15000+600000
+ 48964 multiletter control sequences out of 15000+600000
  627834 words of font info for 202 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,12n,117p,1151b,5182s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,17n,117p,1151b,5182s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr
 .pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1
 xtt.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/z
 tmb.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/z
 tmr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/z
 tmri.pfb>
-Output written on main.pdf (41 pages, 1278753 bytes).
+Output written on main.pdf (43 pages, 2115699 bytes).
 PDF statistics:
- 551 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
- 30687 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 572 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
+ 30722 words of extra memory for PDF output out of 35830 (max. 10000000)
 

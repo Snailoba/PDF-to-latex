@@ -29,6 +29,7 @@
 \usepackage{indentfirst} % indent first paragraph after sections/chapters
 \usepackage{titlesec}    % control heading formats
 \usepackage{fancyhdr}    % header/footer customization
+\usepackage{pdfpages}    % include external PDF pages at the end
 
 % Rename the default bibliography heading for report class
 \renewcommand{\bibname}{References}
@@ -95,5 +96,10 @@
 
 % Print bibliography at the end if not printed in a chapter file
 % (kept empty here; Chapter 5 will call \printbibliography)
+
+% Append external agreement pages as-is (no headers/footers)
+\cleardoublepage
+\includepdfset{pagecommand={}}
+\includepdf[pages=-]{Project Copyright Transfer Agreement 2025_DishDive_Signed.pdf}
 
 \end{document}
